@@ -1,0 +1,157 @@
+{
+  "1": {
+    "passive": 50.0,
+    "first_trip_s": 1760.0,
+    "rows": [
+      {
+        "lead_min": 1,
+        "min_shed": 0.0,
+        "nadir": 50.0
+      },
+      {
+        "lead_min": 3,
+        "min_shed": 0.0,
+        "nadir": 50.0
+      },
+      {
+        "lead_min": 5,
+        "min_shed": 0.0,
+        "nadir": 50.0
+      },
+      {
+        "lead_min": 8,
+        "min_shed": 0.0,
+        "nadir": 50.0
+      },
+      {
+        "lead_min": 12,
+        "min_shed": 0.0,
+        "nadir": 50.0
+      }
+    ]
+  },
+  "2": {
+    "passive": 50.0,
+    "first_trip_s": 1760.0,
+    "rows": [
+      {
+        "lead_min": 1,
+        "min_shed": 0.0,
+        "nadir": 50.0
+      },
+      {
+        "lead_min": 3,
+        "min_shed": 0.0,
+        "nadir": 50.0
+      },
+      {
+        "lead_min": 5,
+        "min_shed": 0.0,
+        "nadir": 50.0
+      },
+      {
+        "lead_min": 8,
+        "min_shed": 0.0,
+        "nadir": 50.0
+      },
+      {
+        "lead_min": 12,
+        "min_shed": 0.0,
+        "nadir": 50.0
+      }
+    ]
+  },
+  "3": {
+    "passive": 49.52,
+    "first_trip_s": 1760.0,
+    "rows": [
+      {
+        "lead_min": 1,
+        "min_shed": 0.0,
+        "nadir": 50.0
+      },
+      {
+        "lead_min": 3,
+        "min_shed": 0.0,
+        "nadir": 50.0
+      },
+      {
+        "lead_min": 5,
+        "min_shed": 0.0,
+        "nadir": 50.0
+      },
+      {
+        "lead_min": 8,
+        "min_shed": 0.0,
+        "nadir": 50.0
+      },
+      {
+        "lead_min": 12,
+        "min_shed": 0.0,
+        "nadir": 50.0
+      }
+    ]
+  },
+  "4": {
+    "passive": 46.91,
+    "first_trip_s": 1760.0,
+    "rows": [
+      {
+        "lead_min": 1,
+        "min_shed": 0.06,
+        "nadir": 50.0
+      },
+      {
+        "lead_min": 3,
+        "min_shed": 0.06,
+        "nadir": 50.0
+      },
+      {
+        "lead_min": 5,
+        "min_shed": 0.06,
+        "nadir": 49.91
+      },
+      {
+        "lead_min": 8,
+        "min_shed": 0.06,
+        "nadir": 49.91
+      },
+      {
+        "lead_min": 12,
+        "min_shed": 0.06,
+        "nadir": 49.91
+      }
+    ]
+  },
+  "5": {
+    "passive": 41.73,
+    "first_trip_s": 1760.0,
+    "rows": [
+      {
+        "lead_min": 1,
+        "min_shed": 0.1,
+        "nadir": 49.17
+      },
+      {
+        "lead_min": 3,
+        "min_shed": 0.15,
+        "nadir": 50.0
+      },
+      {
+        "lead_min": 5,
+        "min_shed": 0.15,
+        "nadir": 50.0
+      },
+      {
+        "lead_min": 8,
+        "min_shed": 0.15,
+        "nadir": 50.0
+      },
+      {
+        "lead_min": 12,
+        "min_shed": 0.15,
+        "nadir": 49.23
+      }
+    ]
+  }
+}
