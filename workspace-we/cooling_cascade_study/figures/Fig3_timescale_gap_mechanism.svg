@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="500" viewBox="0 0 1000 500" font-family="Arial, Liberation Sans, DejaVu Sans, sans-serif">
+  <defs>
+    <marker id="ax" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#5b6b7a"/></marker>
+    <marker id="gn" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#27ae60"/></marker>
+    <marker id="rdi" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#e74c3c"/></marker>
+    <marker id="pp" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#8e44ad"/></marker>
+    <marker id="ppS" markerWidth="9" markerHeight="9" refX="1" refY="3" orient="auto"><path d="M7,0 L0,3 L7,6 Z" fill="#8e44ad"/></marker>
+  </defs>
+  <rect width="1000" height="500" fill="#ffffff"/>
+
+  <!-- key time instants (vertical guides) -->
+  <line x1="120" y1="70" x2="120" y2="474" stroke="#e74c3c" stroke-width="1" stroke-dasharray="4 3"/>
+  <line x1="700" y1="70" x2="700" y2="474" stroke="#17a2b8" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="120" y="60" font-size="11" fill="#c0392b" text-anchor="middle">t = 0  supply failure &amp; warning</text>
+  <text x="700" y="60" font-size="11" fill="#0e7d8c" text-anchor="middle">end of SAET (protection trip)</text>
+
+  <!-- slow-dynamics buffer band -->
+  <rect x="120" y="196" width="580" height="120" fill="#e6f7f9" stroke="#17a2b8" stroke-dasharray="5 4"/>
+  <text x="410" y="188" font-size="12" font-weight="700" fill="#0e7d8c" text-anchor="middle">Cooling-water storage buffer (slow dynamics) = available escape time (SAET)</text>
+  <text x="410" y="262" font-size="11" fill="#0e7d8c" text-anchor="middle">tank + pool storage gradually deplete → back-pressure slowly rises</text>
+
+  <!-- cyber fast response (top) -->
+  <circle cx="120" cy="100" r="6" fill="#e74c3c"/>
+  <text x="132" y="96" font-size="11" font-weight="700" fill="#c0392b">ICS detects municipal head &lt; threshold</text>
+  <text x="132" y="112" font-size="10" fill="#c0392b">→ cross-domain early warning to grid (near-instant)</text>
+  <path d="M120,120 C 330,144 500,144 690,144" fill="none" stroke="#e74c3c" stroke-width="1.8" stroke-dasharray="6 4" marker-end="url(#rdi)"/>
+  <text x="410" y="138" font-size="10" fill="#c0392b" text-anchor="middle">cyber fast response (fast dynamics)</text>
+
+  <!-- usable time-window double arrow -->
+  <line x1="120" y1="168" x2="700" y2="168" stroke="#8e44ad" stroke-width="2" marker-start="url(#ppS)" marker-end="url(#pp)"/>
+  <rect x="300" y="152" width="240" height="22" rx="5" fill="#f3e9fb" stroke="#8e44ad"/>
+  <text x="420" y="168" font-size="11" font-weight="700" fill="#6c3483" text-anchor="middle">Usable proactive-control time window</text>
+
+  <!-- ===== Passive track ===== -->
+  <text x="120" y="352" font-size="12" font-weight="700" fill="#a5281b" text-anchor="start">Passive (no warning):  reserve responds only after the trip (too late)</text>
+  <line x1="120" y1="372" x2="930" y2="372" stroke="#5b6b7a" stroke-width="1.4" marker-end="url(#ax)"/>
+  <text x="936" y="376" font-size="11" fill="#5b6b7a">t</text>
+  <!-- unit output: full until end of SAET then sudden trip -->
+  <path d="M120,362 L700,362 L700,404 L930,404" fill="none" stroke="#c0392b" stroke-width="2.4"/>
+  <path d="M700,362 L700,404 L930,404 L930,362 Z" fill="#f6c9c4" opacity="0.55"/>
+  <text x="815" y="392" font-size="11" font-weight="700" fill="#a5281b" text-anchor="middle">sudden trip → deep power deficit</text>
+
+  <!-- ===== Proactive track ===== -->
+  <text x="120" y="440" font-size="12" font-weight="700" fill="#1e8449" text-anchor="start">Proactive (with warning):  soft landing + reserve pre-start within the window</text>
+  <line x1="120" y1="460" x2="930" y2="460" stroke="#5b6b7a" stroke-width="1.4" marker-end="url(#ax)"/>
+  <text x="936" y="464" font-size="11" fill="#5b6b7a">t</text>
+  <!-- affected unit soft landing -->
+  <path d="M120,452 L690,468" fill="none" stroke="#27ae60" stroke-width="2.4"/>
+  <!-- other units ramp up in advance -->
+  <path d="M120,470 L690,454" fill="none" stroke="#27ae60" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#gn)"/>
+  <text x="250" y="486" font-size="10" fill="#1e8449">affected unit soft landing (runback)  ·  other units ramp up in advance</text>
+  <text x="815" y="452" font-size="11" font-weight="700" fill="#1e8449" text-anchor="middle">trip avoided → deficit eliminated</text>
+</svg>

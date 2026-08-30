@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" font-family="Arial, Liberation Sans, DejaVu Sans, sans-serif">
+  <defs>
+    <marker id="aCool" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#17a2b8"/></marker>
+    <marker id="aDown" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#33414d"/></marker>
+    <marker id="aWarn" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#e74c3c"/></marker>
+    <marker id="aPurp" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#8e44ad"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1000" height="600" fill="#ffffff"/>
+
+  <!-- ============ Time-scale ruler (far left) ============ -->
+  <line x1="46" y1="34" x2="46" y2="530" stroke="#c9d3dc" stroke-width="1.2"/>
+  <text x="34" y="88"  font-size="10" fill="#5b6b7a" text-anchor="middle" transform="rotate(-90 34 88)">Hydraulic · min (slow)</text>
+  <text x="34" y="235" font-size="10" fill="#0e7d8c" text-anchor="middle" transform="rotate(-90 34 235)">Thermal · s–min</text>
+  <text x="34" y="380" font-size="10" fill="#a5281b" text-anchor="middle" transform="rotate(-90 34 380)">Electromech. · s (fast)</text>
+
+  <!-- ============ Cyber column (right) ============ -->
+  <rect x="770" y="34" width="184" height="496" rx="10" fill="#fdeeee" stroke="#e74c3c" stroke-dasharray="6 4" stroke-width="1.4"/>
+  <text x="862" y="52" font-size="12" font-weight="700" fill="#c0392b" text-anchor="middle">Cyber layer · 3-tier ICS</text>
+
+  <!-- Municipal ICS (aligned to Layer 1) -->
+  <rect x="786" y="64" width="152" height="86" rx="6" fill="#ffffff" stroke="#e74c3c"/>
+  <text x="862" y="84" font-size="12" font-weight="700" fill="#c0392b" text-anchor="middle">Municipal ICS</text>
+  <text x="862" y="104" font-size="10" fill="#7b241c" text-anchor="middle">Dispatch · outage decision</text>
+  <text x="862" y="120" font-size="10" fill="#7b241c" text-anchor="middle">SCADA · pressure detect</text>
+  <text x="862" y="136" font-size="10" fill="#7b241c" text-anchor="middle">PLC · sampling</text>
+
+  <!-- Cooling-water ICS (aligned to Layer 2) -->
+  <rect x="786" y="206" width="152" height="86" rx="6" fill="#ffffff" stroke="#e74c3c"/>
+  <text x="862" y="226" font-size="12" font-weight="700" fill="#c0392b" text-anchor="middle">Cooling-water ICS</text>
+  <text x="862" y="246" font-size="10" fill="#7b241c" text-anchor="middle">Dispatch · coord. grid</text>
+  <text x="862" y="262" font-size="10" fill="#7b241c" text-anchor="middle">SCADA · level/back-pres.</text>
+  <text x="862" y="278" font-size="10" fill="#7b241c" text-anchor="middle">PLC · valve/pump prot.</text>
+
+  <!-- Power-system ICS (aligned to Layer 3) -->
+  <rect x="786" y="348" width="152" height="86" rx="6" fill="#ffffff" stroke="#e74c3c"/>
+  <text x="862" y="368" font-size="12" font-weight="700" fill="#c0392b" text-anchor="middle">Power-system ICS</text>
+  <text x="862" y="388" font-size="10" fill="#7b241c" text-anchor="middle">Dispatch · proactive ctrl</text>
+  <text x="862" y="404" font-size="10" fill="#7b241c" text-anchor="middle">SCADA/EMS · power flow</text>
+  <text x="862" y="420" font-size="10" fill="#7b241c" text-anchor="middle">RTU/PLC · unit control</text>
+
+  <!-- Early-warning: Municipal ICS -> Power-system ICS (clean vertical, left edge of cyber column) -->
+  <path d="M786,150 L768,150 L768,348 L786,348" fill="none" stroke="#e74c3c" stroke-width="2.2" stroke-dasharray="7 5" marker-end="url(#aWarn)"/>
+  <text x="760" y="249" font-size="9.5" font-weight="700" fill="#c0392b" text-anchor="middle" transform="rotate(-90 760 249)">Cross-domain early warning (zero delay)</text>
+
+  <!-- In-plant interaction: Cooling ICS <-> Power ICS (short vertical, purple) -->
+  <line x1="862" y1="292" x2="862" y2="348" stroke="#8e44ad" stroke-width="1.8" marker-end="url(#aPurp)"/>
+  <text x="872" y="322" font-size="10" fill="#8e44ad">in-plant</text>
+
+  <!-- ============ Physical layers (left, top -> down) ============ -->
+  <!-- Layer 1: Municipal water -->
+  <rect x="62" y="46" width="688" height="104" rx="10" fill="#eaf3fb" stroke="#2980b9" stroke-width="1.5"/>
+  <text x="78" y="66" font-size="12" font-weight="700" fill="#1f6fb2">① Municipal water supply</text>
+  <g text-anchor="middle" fill="#1a2b3c">
+    <rect x="96" y="80" width="150" height="56" rx="6" fill="#ffffff" stroke="#2980b9"/>
+    <text x="171" y="104" font-size="12">Reservoir</text><text x="171" y="122" font-size="10" fill="#5b6b7a">unique source</text>
+    <rect x="286" y="80" width="176" height="56" rx="6" fill="#ffffff" stroke="#2980b9"/>
+    <text x="374" y="104" font-size="12">Distribution / DMA zones</text><text x="374" y="122" font-size="10" fill="#5b6b7a">tank buffering</text>
+    <rect x="502" y="80" width="176" height="56" rx="6" fill="#fff3f3" stroke="#c0392b"/>
+    <text x="590" y="104" font-size="12" fill="#c0392b" font-weight="600">Intake node</text><text x="590" y="122" font-size="10" fill="#c0392b">failure source: head &lt; 28 m</text>
+  </g>
+
+  <!-- Layer 2: Cooling-water system -->
+  <rect x="62" y="166" width="688" height="140" rx="10" fill="#e6f7f9" stroke="#17a2b8" stroke-width="2.2"/>
+  <text x="78" y="186" font-size="12" font-weight="700" fill="#0e7d8c">② Cooling-water system  ★ first explicit modeling (Contribution 1)</text>
+  <g text-anchor="middle" fill="#1a2b3c">
+    <rect x="80" y="200" width="98" height="92" rx="6" fill="#ffffff" stroke="#17a2b8"/><text x="129" y="240" font-size="12">Make-up</text><text x="129" y="256" font-size="12">tank</text><text x="129" y="276" font-size="10" fill="#5b6b7a">mass balance</text>
+    <rect x="198" y="200" width="98" height="92" rx="6" fill="#ffffff" stroke="#17a2b8"/><text x="247" y="248" font-size="12">Pool</text><text x="247" y="276" font-size="10" fill="#5b6b7a">storage</text>
+    <rect x="316" y="200" width="98" height="92" rx="6" fill="#ffffff" stroke="#17a2b8"/><text x="365" y="240" font-size="12">Circ.</text><text x="365" y="256" font-size="12">pump</text><text x="365" y="276" font-size="10" fill="#5b6b7a">NPSH</text>
+    <rect x="434" y="200" width="98" height="92" rx="6" fill="#ffffff" stroke="#17a2b8"/><text x="483" y="248" font-size="12">Condenser</text><text x="483" y="276" font-size="10" fill="#5b6b7a">ε-NTU</text>
+    <rect x="552" y="200" width="98" height="92" rx="6" fill="#ffffff" stroke="#17a2b8"/><text x="601" y="240" font-size="12">LP</text><text x="601" y="256" font-size="12">cylinder</text><text x="601" y="276" font-size="10" fill="#5b6b7a">back-pres.</text>
+    <rect x="668" y="200" width="70" height="92" rx="6" fill="#fff7e6" stroke="#e08a1e"/><text x="703" y="244" font-size="11" fill="#b9770f">Cooling</text><text x="703" y="260" font-size="11" fill="#b9770f">tower</text>
+  </g>
+  <g stroke="#17a2b8" stroke-width="2" fill="none">
+    <line x1="178" y1="246" x2="196" y2="246" marker-end="url(#aCool)"/>
+    <line x1="296" y1="246" x2="314" y2="246" marker-end="url(#aCool)"/>
+    <line x1="414" y1="246" x2="432" y2="246" marker-end="url(#aCool)"/>
+    <line x1="532" y1="246" x2="550" y2="246" marker-end="url(#aCool)"/>
+    <line x1="650" y1="246" x2="666" y2="246" marker-end="url(#aCool)"/>
+  </g>
+
+  <!-- Layer 3: Power system -->
+  <rect x="62" y="322" width="688" height="104" rx="10" fill="#fdecea" stroke="#c0392b" stroke-width="1.5"/>
+  <text x="78" y="342" font-size="12" font-weight="700" fill="#a5281b">③ Power system  (IEEE-118 · DC power flow)</text>
+  <g text-anchor="middle" fill="#1a2b3c">
+    <rect x="96" y="356" width="176" height="56" rx="6" fill="#ffffff" stroke="#c0392b"/><text x="184" y="380" font-size="12">Affected generators</text><text x="184" y="398" font-size="10" fill="#5b6b7a">output ↓ / trip</text>
+    <rect x="312" y="356" width="150" height="56" rx="6" fill="#ffffff" stroke="#c0392b"/><text x="387" y="380" font-size="12">Two-tier reserve</text><text x="387" y="398" font-size="10" fill="#5b6b7a">spinning + slow-start</text>
+    <rect x="502" y="356" width="176" height="56" rx="6" fill="#ffffff" stroke="#c0392b"/><text x="590" y="380" font-size="12">Proactive control LP</text><text x="590" y="398" font-size="10" fill="#5b6b7a">PA/SP/DP · PTDF</text>
+  </g>
+
+  <!-- Layer 4: Impact & resilience -->
+  <rect x="62" y="442" width="688" height="92" rx="10" fill="#eafaf1" stroke="#27ae60" stroke-width="1.5"/>
+  <text x="78" y="462" font-size="12" font-weight="700" fill="#1e8449">④ Impact &amp; resilience metrics</text>
+  <g text-anchor="middle" fill="#1a2b3c">
+    <rect x="150" y="476" width="240" height="46" rx="6" fill="#ffffff" stroke="#27ae60"/><text x="270" y="496" font-size="12" font-weight="600">Unserved power (MW)</text><text x="270" y="513" font-size="10" fill="#5b6b7a">impact / resilience indicator</text>
+    <rect x="422" y="476" width="240" height="46" rx="6" fill="#ffffff" stroke="#27ae60"/><text x="542" y="496" font-size="12" font-weight="600">Energy loss (MWh)</text><text x="542" y="513" font-size="10" fill="#5b6b7a">impact / resilience indicator</text>
+  </g>
+
+  <!-- ===== Inter-layer physical coupling arrows (centred, vertical, clean) ===== -->
+  <line x1="406" y1="150" x2="406" y2="166" stroke="#2980b9" stroke-width="2.4" marker-end="url(#aCool)"/>
+  <text x="416" y="162" font-size="10" fill="#1f6fb2" text-anchor="start">make-up water</text>
+  <line x1="406" y1="306" x2="406" y2="322" stroke="#17a2b8" stroke-width="2.4" marker-end="url(#aDown)"/>
+  <text x="416" y="318" font-size="10" fill="#0e7d8c" text-anchor="start">back-pressure rise → derate / trip</text>
+  <line x1="406" y1="426" x2="406" y2="442" stroke="#c0392b" stroke-width="2.4" marker-end="url(#aDown)"/>
+  <text x="416" y="438" font-size="10" fill="#a5281b" text-anchor="start">unserved power → energy loss</text>
+
+  <!-- ===== Cyber horizontal dashed links (clean, short) ===== -->
+  <line x1="678" y1="108" x2="786" y2="108" stroke="#e74c3c" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#aWarn)"/>
+  <text x="732" y="100" font-size="10" fill="#c0392b" text-anchor="middle">pressure detect</text>
+  <line x1="786" y1="392" x2="678" y2="392" stroke="#e74c3c" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#aWarn)"/>
+  <text x="732" y="384" font-size="10" fill="#c0392b" text-anchor="middle">trigger proactive ctrl</text>
+
+  <!-- ===== Legend ===== -->
+  <g font-size="10">
+    <line x1="80" y1="560" x2="116" y2="560" stroke="#17a2b8" stroke-width="2.4" marker-end="url(#aCool)"/><text x="122" y="564" fill="#1a2b3c">Physical coupling (cooling water)</text>
+    <line x1="360" y1="560" x2="396" y2="560" stroke="#e74c3c" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#aWarn)"/><text x="402" y="564" fill="#1a2b3c">Cyber coupling (early warning)</text>
+    <line x1="620" y1="560" x2="656" y2="560" stroke="#8e44ad" stroke-width="2" marker-end="url(#aPurp)"/><text x="662" y="564" fill="#1a2b3c">In-plant ICS interaction</text>
+  </g>
+</svg>
