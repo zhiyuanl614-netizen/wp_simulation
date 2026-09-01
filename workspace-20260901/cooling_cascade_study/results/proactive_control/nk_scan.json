@@ -1,0 +1,494 @@
+[
+ {
+  "k": 1,
+  "subset": "worst",
+  "buses": [
+   89
+  ],
+  "lost_MW": 607.0,
+  "PA_feasible": true,
+  "PA_maxdef_MW": 91.1,
+  "PA_energy_MWh": 7.6,
+  "PA_s": 7.1,
+  "SP_feasible": true,
+  "SP_maxdef_MW": 0.0,
+  "SP_energy_MWh": 0.0,
+  "SP_s": 1.8
+ },
+ {
+  "k": 1,
+  "subset": "rand0",
+  "buses": [
+   31
+  ],
+  "lost_MW": 7.0,
+  "PA_feasible": true,
+  "PA_maxdef_MW": 0.0,
+  "PA_energy_MWh": 0.0,
+  "PA_s": 2.0,
+  "SP_feasible": true,
+  "SP_maxdef_MW": 0.0,
+  "SP_energy_MWh": 0.0,
+  "SP_s": 1.5
+ },
+ {
+  "k": 1,
+  "subset": "rand1",
+  "buses": [
+   59
+  ],
+  "lost_MW": 155.0,
+  "PA_feasible": true,
+  "PA_maxdef_MW": 0.0,
+  "PA_energy_MWh": 0.0,
+  "PA_s": 1.6,
+  "SP_feasible": true,
+  "SP_maxdef_MW": 0.0,
+  "SP_energy_MWh": 0.0,
+  "SP_s": 1.2
+ },
+ {
+  "k": 1,
+  "subset": "rand2",
+  "buses": [
+   111
+  ],
+  "lost_MW": 36.0,
+  "PA_feasible": true,
+  "PA_maxdef_MW": 0.0,
+  "PA_energy_MWh": 0.0,
+  "PA_s": 1.4,
+  "SP_feasible": true,
+  "SP_maxdef_MW": 0.0,
+  "SP_energy_MWh": 0.0,
+  "SP_s": 1.4
+ },
+ {
+  "k": 2,
+  "subset": "worst",
+  "buses": [
+   69,
+   89
+  ],
+  "lost_MW": 1123.4,
+  "PA_feasible": true,
+  "PA_maxdef_MW": 108.6,
+  "PA_energy_MWh": 9.0,
+  "PA_s": 26.4,
+  "SP_feasible": true,
+  "SP_maxdef_MW": 0.0,
+  "SP_energy_MWh": 0.0,
+  "SP_s": 1.5
+ },
+ {
+  "k": 2,
+  "subset": "rand0",
+  "buses": [
+   61,
+   100
+  ],
+  "lost_MW": 412.0,
+  "PA_feasible": true,
+  "PA_maxdef_MW": 0.0,
+  "PA_energy_MWh": 0.0,
+  "PA_s": 1.5,
+  "SP_feasible": true,
+  "SP_maxdef_MW": 0.0,
+  "SP_energy_MWh": 0.0,
+  "SP_s": 1.4
+ },
+ {
+  "k": 2,
+  "subset": "rand1",
+  "buses": [
+   26,
+   46
+  ],
+  "lost_MW": 333.0,
+  "PA_feasible": true,
+  "PA_maxdef_MW": 0.0,
+  "PA_energy_MWh": 0.0,
+  "PA_s": 1.5,
+  "SP_feasible": true,
+  "SP_maxdef_MW": 0.0,
+  "SP_energy_MWh": 0.0,
+  "SP_s": 1.6
+ },
+ {
+  "k": 2,
+  "subset": "rand2",
+  "buses": [
+   59,
+   100
+  ],
+  "lost_MW": 407.0,
+  "PA_feasible": true,
+  "PA_maxdef_MW": 0.0,
+  "PA_energy_MWh": 0.0,
+  "PA_s": 1.6,
+  "SP_feasible": true,
+  "SP_maxdef_MW": 0.0,
+  "SP_energy_MWh": 0.0,
+  "SP_s": 1.4
+ },
+ {
+  "k": 3,
+  "subset": "worst",
+  "buses": [
+   69,
+   80,
+   89
+  ],
+  "lost_MW": 1600.4,
+  "PA_feasible": true,
+  "PA_maxdef_MW": 172.6,
+  "PA_energy_MWh": 112.0,
+  "PA_s": 5.6,
+  "SP_feasible": true,
+  "SP_maxdef_MW": 57.1,
+  "SP_energy_MWh": 95.6,
+  "SP_s": 24.7
+ },
+ {
+  "k": 3,
+  "subset": "rand0",
+  "buses": [
+   10,
+   59,
+   65
+  ],
+  "lost_MW": 996.0,
+  "PA_feasible": true,
+  "PA_maxdef_MW": 0.0,
+  "PA_energy_MWh": 0.0,
+  "PA_s": 1.5,
+  "SP_feasible": true,
+  "SP_maxdef_MW": 0.0,
+  "SP_energy_MWh": 0.0,
+  "SP_s": 1.4
+ },
+ {
+  "k": 3,
+  "subset": "rand1",
+  "buses": [
+   12,
+   25,
+   111
+  ],
+  "lost_MW": 341.0,
+  "PA_feasible": true,
+  "PA_maxdef_MW": 0.0,
+  "PA_energy_MWh": 0.0,
+  "PA_s": 1.7,
+  "SP_feasible": true,
+  "SP_maxdef_MW": 0.0,
+  "SP_energy_MWh": 0.0,
+  "SP_s": 1.4
+ },
+ {
+  "k": 3,
+  "subset": "rand2",
+  "buses": [
+   54,
+   66,
+   100
+  ],
+  "lost_MW": 692.0,
+  "PA_feasible": true,
+  "PA_maxdef_MW": 0.0,
+  "PA_energy_MWh": 0.0,
+  "PA_s": 2.8,
+  "SP_feasible": true,
+  "SP_maxdef_MW": 0.0,
+  "SP_energy_MWh": 0.0,
+  "SP_s": 1.4
+ },
+ {
+  "k": 6,
+  "subset": "worst",
+  "buses": [
+   10,
+   65,
+   66,
+   69,
+   80,
+   89
+  ],
+  "lost_MW": 2833.4,
+  "PA_feasible": true,
+  "PA_maxdef_MW": 172.1,
+  "PA_energy_MWh": 112.1,
+  "PA_s": 6.7,
+  "SP_feasible": true,
+  "SP_maxdef_MW": 57.5,
+  "SP_energy_MWh": 96.0,
+  "SP_s": 17.9
+ },
+ {
+  "k": 6,
+  "subset": "rand0",
+  "buses": [
+   10,
+   12,
+   61,
+   65,
+   87,
+   100
+  ],
+  "lost_MW": 1342.0,
+  "PA_feasible": true,
+  "PA_maxdef_MW": 0.0,
+  "PA_energy_MWh": 0.0,
+  "PA_s": 2.1,
+  "SP_feasible": true,
+  "SP_maxdef_MW": 0.0,
+  "SP_energy_MWh": 0.0,
+  "SP_s": 1.3
+ },
+ {
+  "k": 6,
+  "subset": "rand1",
+  "buses": [
+   26,
+   31,
+   46,
+   66,
+   89,
+   100
+  ],
+  "lost_MW": 1591.0,
+  "PA_feasible": true,
+  "PA_maxdef_MW": 154.5,
+  "PA_energy_MWh": 12.9,
+  "PA_s": 11.5,
+  "SP_feasible": true,
+  "SP_maxdef_MW": 0.0,
+  "SP_energy_MWh": 0.0,
+  "SP_s": 1.4
+ },
+ {
+  "k": 6,
+  "subset": "rand2",
+  "buses": [
+   25,
+   31,
+   46,
+   59,
+   66,
+   69
+  ],
+  "lost_MW": 1309.4,
+  "PA_feasible": true,
+  "PA_maxdef_MW": 161.9,
+  "PA_energy_MWh": 22.7,
+  "PA_s": 1.7,
+  "SP_feasible": true,
+  "SP_maxdef_MW": 0.0,
+  "SP_energy_MWh": 0.0,
+  "SP_s": 1.2
+ },
+ {
+  "k": 9,
+  "subset": "worst",
+  "buses": [
+   10,
+   25,
+   26,
+   65,
+   66,
+   69,
+   80,
+   89,
+   100
+  ],
+  "lost_MW": 3619.4,
+  "PA_feasible": true,
+  "PA_maxdef_MW": 215.6,
+  "PA_energy_MWh": 115.9,
+  "PA_s": 3.4,
+  "SP_feasible": true,
+  "SP_maxdef_MW": 58.0,
+  "SP_energy_MWh": 96.6,
+  "SP_s": 11.0
+ },
+ {
+  "k": 9,
+  "subset": "rand0",
+  "buses": [
+   10,
+   25,
+   61,
+   65,
+   66,
+   87,
+   89,
+   100,
+   111
+  ],
+  "lost_MW": 2512.0,
+  "PA_feasible": true,
+  "PA_maxdef_MW": 149.4,
+  "PA_energy_MWh": 12.4,
+  "PA_s": 4.1,
+  "SP_feasible": true,
+  "SP_maxdef_MW": 0.0,
+  "SP_energy_MWh": 0.0,
+  "SP_s": 1.3
+ },
+ {
+  "k": 9,
+  "subset": "rand1",
+  "buses": [
+   46,
+   54,
+   59,
+   61,
+   69,
+   80,
+   87,
+   89,
+   103
+  ],
+  "lost_MW": 2026.4,
+  "PA_feasible": true,
+  "PA_maxdef_MW": 206.3,
+  "PA_energy_MWh": 156.3,
+  "PA_s": 4.6,
+  "SP_feasible": true,
+  "SP_maxdef_MW": 84.2,
+  "SP_energy_MWh": 144.7,
+  "SP_s": 13.1
+ },
+ {
+  "k": 9,
+  "subset": "rand2",
+  "buses": [
+   10,
+   31,
+   61,
+   65,
+   66,
+   69,
+   89,
+   103,
+   111
+  ],
+  "lost_MW": 2599.4,
+  "PA_feasible": true,
+  "PA_maxdef_MW": 137.3,
+  "PA_energy_MWh": 11.4,
+  "PA_s": 18.7,
+  "SP_feasible": true,
+  "SP_maxdef_MW": 0.0,
+  "SP_energy_MWh": 0.0,
+  "SP_s": 1.6
+ },
+ {
+  "k": 12,
+  "subset": "worst",
+  "buses": [
+   10,
+   25,
+   26,
+   49,
+   59,
+   61,
+   65,
+   66,
+   69,
+   80,
+   89,
+   100
+  ],
+  "lost_MW": 4138.4,
+  "PA_feasible": true,
+  "PA_maxdef_MW": 223.4,
+  "PA_energy_MWh": 143.9,
+  "PA_s": 3.4,
+  "SP_feasible": true,
+  "SP_maxdef_MW": 76.8,
+  "SP_energy_MWh": 128.2,
+  "SP_s": 10.8
+ },
+ {
+  "k": 12,
+  "subset": "rand0",
+  "buses": [
+   10,
+   12,
+   25,
+   26,
+   46,
+   59,
+   65,
+   69,
+   80,
+   87,
+   103,
+   111
+  ],
+  "lost_MW": 2707.4,
+  "PA_feasible": true,
+  "PA_maxdef_MW": 311.8,
+  "PA_energy_MWh": 118.9,
+  "PA_s": 3.0,
+  "SP_feasible": true,
+  "SP_maxdef_MW": 0.0,
+  "SP_energy_MWh": 0.0,
+  "SP_s": 5.6
+ },
+ {
+  "k": 12,
+  "subset": "rand1",
+  "buses": [
+   10,
+   12,
+   49,
+   61,
+   65,
+   66,
+   69,
+   80,
+   87,
+   100,
+   103,
+   111
+  ],
+  "lost_MW": 3007.4,
+  "PA_feasible": true,
+  "PA_maxdef_MW": 307.6,
+  "PA_energy_MWh": 113.8,
+  "PA_s": 3.3,
+  "SP_feasible": true,
+  "SP_maxdef_MW": 0.0,
+  "SP_energy_MWh": 0.0,
+  "SP_s": 10.2
+ },
+ {
+  "k": 12,
+  "subset": "rand2",
+  "buses": [
+   10,
+   25,
+   46,
+   54,
+   59,
+   65,
+   66,
+   69,
+   80,
+   87,
+   100,
+   111
+  ],
+  "lost_MW": 2960.4,
+  "PA_feasible": true,
+  "PA_maxdef_MW": 309.5,
+  "PA_energy_MWh": 123.8,
+  "PA_s": 2.9,
+  "SP_feasible": true,
+  "SP_maxdef_MW": 1.1,
+  "SP_energy_MWh": 0.1,
+  "SP_s": 10.9
+ }
+]
