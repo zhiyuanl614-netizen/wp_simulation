@@ -1,0 +1,113 @@
+{
+ "bus": 89,
+ "Pg_MW": 607.0,
+ "Pmax_MW": 707.0,
+ "dt_s": 1.0,
+ "SAET_min": 88.6,
+ "ASW0_m3": 2773.35976280226,
+ "critical": {
+  "ramp_time_s": 11000.0,
+  "r_per_s": 9.09090909090909e-05,
+  "r_pct_per_min": 0.5454545454545454,
+  "T_oper_min": 183.33333333333334
+ },
+ "scan": [
+  {
+   "ramp_time_s": 600.0,
+   "r_per_s": 0.0016666666666666668,
+   "T_oper_s": 600.0,
+   "forced_trip": false
+  },
+  {
+   "ramp_time_s": 900.0,
+   "r_per_s": 0.0011111111111111111,
+   "T_oper_s": 900.0,
+   "forced_trip": false
+  },
+  {
+   "ramp_time_s": 1200.0,
+   "r_per_s": 0.0008333333333333334,
+   "T_oper_s": 1200.0,
+   "forced_trip": false
+  },
+  {
+   "ramp_time_s": 1600.0,
+   "r_per_s": 0.000625,
+   "T_oper_s": 1600.0,
+   "forced_trip": false
+  },
+  {
+   "ramp_time_s": 2000.0,
+   "r_per_s": 0.0005,
+   "T_oper_s": 2000.0,
+   "forced_trip": false
+  },
+  {
+   "ramp_time_s": 2600.0,
+   "r_per_s": 0.0003846153846153846,
+   "T_oper_s": 2600.0,
+   "forced_trip": false
+  },
+  {
+   "ramp_time_s": 3400.0,
+   "r_per_s": 0.0002941176470588235,
+   "T_oper_s": 3400.0000000000005,
+   "forced_trip": false
+  },
+  {
+   "ramp_time_s": 4400.0,
+   "r_per_s": 0.00022727272727272727,
+   "T_oper_s": 4400.0,
+   "forced_trip": false
+  },
+  {
+   "ramp_time_s": 5600.0,
+   "r_per_s": 0.00017857142857142857,
+   "T_oper_s": 5600.0,
+   "forced_trip": false
+  },
+  {
+   "ramp_time_s": 7200.0,
+   "r_per_s": 0.0001388888888888889,
+   "T_oper_s": 7200.0,
+   "forced_trip": false
+  },
+  {
+   "ramp_time_s": 9000.0,
+   "r_per_s": 0.00011111111111111112,
+   "T_oper_s": 9000.0,
+   "forced_trip": false
+  },
+  {
+   "ramp_time_s": 11000.0,
+   "r_per_s": 9.09090909090909e-05,
+   "T_oper_s": 11000.0,
+   "forced_trip": false
+  },
+  {
+   "ramp_time_s": 13000.0,
+   "r_per_s": 7.692307692307693e-05,
+   "T_oper_s": 8738.0,
+   "forced_trip": true
+  },
+  {
+   "ramp_time_s": 16000.0,
+   "r_per_s": 6.25e-05,
+   "T_oper_s": 7301.0,
+   "forced_trip": true
+  },
+  {
+   "ramp_time_s": 20000.0,
+   "r_per_s": 5e-05,
+   "T_oper_s": 6652.0,
+   "forced_trip": true
+  },
+  {
+   "ramp_time_s": 24000.0,
+   "r_per_s": 4.1666666666666665e-05,
+   "T_oper_s": 6332.0,
+   "forced_trip": true
+  }
+ ],
+ "note": "对齐 Yu et al. Nat.Commun. 2024 Fig.3 数值算例（气->水类比）；市政边界为合成阶跃(B-ST 保守下界)。"
+}

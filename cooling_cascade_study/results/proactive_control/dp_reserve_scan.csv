@@ -1,0 +1,52 @@
+scan,scenario,label,buses,R_per_min,reserve_frac,mode,feasible,max_deficit_MW,energy_deficit_MWh,max_overload_MW,final_deficit_MW,saet_min,solve_s
+DP_over_R,S1_single_bus89,Single bus89,89,0.0025,1.0,DP,True,0.0,0.0,80.06,0.0,88.6,41.1
+DP_over_R,S1_single_bus89,Single bus89,89,0.003,1.0,DP,True,0.0,0.0,65.15,0.0,88.6,33.6
+DP_over_R,S1_single_bus89,Single bus89,89,0.0035,1.0,DP,True,0.0,0.0,49.33,0.0,88.6,23.9
+DP_over_R,S1_single_bus89,Single bus89,89,0.005,1.0,DP,True,0.0,0.0,16.52,0.0,88.6,6.2
+DP_over_R,S1_single_bus89,Single bus89,89,0.0075,1.0,DP,True,0.0,0.0,8.77,0.0,88.6,2.3
+DP_over_R,S1_single_bus89,Single bus89,89,0.01,1.0,DP,True,0.0,0.0,0.0,0.0,88.6,2.0
+DP_over_R,S1_single_bus89,Single bus89,89,0.015,1.0,DP,True,0.0,0.0,0.0,0.0,88.6,1.5
+DP_over_R,S1_single_bus89,Single bus89,89,0.02,1.0,DP,True,0.0,0.0,0.0,0.0,88.6,1.3
+DP_over_R,S1_single_bus89,Single bus89,89,0.04,1.0,DP,True,0.0,0.0,0.0,0.0,88.6,1.2
+DP_over_R,S2_CO_3unit,"CO (89,80,10)",89;80;10,0.0025,1.0,DP,True,14.24,3.13,143.18,0.0,88.6;116.9;124.8,36.0
+DP_over_R,S2_CO_3unit,"CO (89,80,10)",89;80;10,0.003,1.0,DP,True,0.0,0.0,138.95,0.0,88.6;116.9;124.8,58.5
+DP_over_R,S2_CO_3unit,"CO (89,80,10)",89;80;10,0.0035,1.0,DP,True,0.0,0.0,124.79,0.0,88.6;116.9;124.8,48.5
+DP_over_R,S2_CO_3unit,"CO (89,80,10)",89;80;10,0.005,1.0,DP,True,0.0,0.0,75.15,0.0,88.6;116.9;124.8,46.0
+DP_over_R,S2_CO_3unit,"CO (89,80,10)",89;80;10,0.0075,1.0,DP,True,0.0,0.0,36.76,0.0,88.6;116.9;124.8,71.3
+DP_over_R,S2_CO_3unit,"CO (89,80,10)",89;80;10,0.01,1.0,DP,True,0.0,0.0,36.76,0.0,88.6;116.9;124.8,46.6
+DP_over_R,S2_CO_3unit,"CO (89,80,10)",89;80;10,0.015,1.0,DP,True,0.0,0.0,36.76,0.0,88.6;116.9;124.8,33.5
+DP_over_R,S2_CO_3unit,"CO (89,80,10)",89;80;10,0.02,1.0,DP,True,0.0,0.0,36.76,0.0,88.6;116.9;124.8,21.1
+DP_over_R,S2_CO_3unit,"CO (89,80,10)",89;80;10,0.04,1.0,DP,True,0.0,0.0,36.76,0.0,88.6;116.9;124.8,11.4
+DP_over_R,S3_nk_worst_k3,N-k worst k=3,69;80;89,0.0025,1.0,DP,True,384.59,568.44,145.96,240.22,107.0;116.9;88.6,32.0
+DP_over_R,S3_nk_worst_k3,N-k worst k=3,69;80;89,0.003,1.0,DP,True,239.82,350.16,139.97,199.73,107.0;116.9;88.6,25.2
+DP_over_R,S3_nk_worst_k3,N-k worst k=3,69;80;89,0.0035,1.0,DP,True,205.74,263.34,124.8,164.96,107.0;116.9;88.6,26.0
+DP_over_R,S3_nk_worst_k3,N-k worst k=3,69;80;89,0.005,1.0,DP,True,91.23,86.35,75.15,57.16,107.0;116.9;88.6,26.9
+DP_over_R,S3_nk_worst_k3,N-k worst k=3,69;80;89,0.0075,1.0,DP,True,57.27,47.3,36.76,57.12,107.0;116.9;88.6,45.4
+DP_over_R,S3_nk_worst_k3,N-k worst k=3,69;80;89,0.01,1.0,DP,True,57.15,47.02,36.76,57.12,107.0;116.9;88.6,45.4
+DP_over_R,S3_nk_worst_k3,N-k worst k=3,69;80;89,0.015,1.0,DP,True,57.12,46.83,36.76,57.12,107.0;116.9;88.6,34.9
+DP_over_R,S3_nk_worst_k3,N-k worst k=3,69;80;89,0.02,1.0,DP,True,57.12,46.8,36.76,57.12,107.0;116.9;88.6,38.8
+DP_over_R,S3_nk_worst_k3,N-k worst k=3,69;80;89,0.04,1.0,DP,True,57.12,46.79,36.76,57.12,107.0;116.9;88.6,44.0
+reserve_frac,S1_single_bus89,Single bus89,89,0.01,1.0,PA,True,314.95,35.93,151.28,0.0,88.6,20.9
+reserve_frac,S1_single_bus89,Single bus89,89,0.01,1.0,SP,True,0.0,0.0,0.0,0.0,88.6,2.0
+reserve_frac,S1_single_bus89,Single bus89,89,0.01,0.5,PA,True,314.95,38.26,151.28,0.0,88.6,6.1
+reserve_frac,S1_single_bus89,Single bus89,89,0.01,0.5,SP,True,0.0,0.0,53.44,0.0,88.6,14.4
+reserve_frac,S1_single_bus89,Single bus89,89,0.01,0.35,PA,True,314.95,36.75,151.28,0.0,88.6,4.4
+reserve_frac,S1_single_bus89,Single bus89,89,0.01,0.35,SP,True,0.0,0.0,76.61,0.0,88.6,11.9
+reserve_frac,S1_single_bus89,Single bus89,89,0.01,0.25,PA,True,318.39,44.12,153.22,0.0,88.6,1.1
+reserve_frac,S1_single_bus89,Single bus89,89,0.01,0.25,SP,True,0.0,0.0,56.74,0.0,88.6,1.3
+reserve_frac,S2_CO_3unit,"CO (89,80,10)",89;80;10,0.01,1.0,PA,True,343.27,71.93,163.4,0.0,88.6;116.9;124.8,9.6
+reserve_frac,S2_CO_3unit,"CO (89,80,10)",89;80;10,0.01,1.0,SP,True,0.0,0.0,36.76,0.0,88.6;116.9;124.8,40.5
+reserve_frac,S2_CO_3unit,"CO (89,80,10)",89;80;10,0.01,0.5,PA,True,343.27,75.53,163.4,0.0,88.6;116.9;124.8,3.8
+reserve_frac,S2_CO_3unit,"CO (89,80,10)",89;80;10,0.01,0.5,SP,True,0.0,0.0,130.51,0.0,88.6;116.9;124.8,9.9
+reserve_frac,S2_CO_3unit,"CO (89,80,10)",89;80;10,0.01,0.35,PA,True,343.27,141.1,163.4,50.54,88.6;116.9;124.8,1.1
+reserve_frac,S2_CO_3unit,"CO (89,80,10)",89;80;10,0.01,0.35,SP,True,50.54,76.57,161.7,50.54,88.6;116.9;124.8,2.5
+reserve_frac,S2_CO_3unit,"CO (89,80,10)",89;80;10,0.01,0.25,PA,True,389.29,532.62,246.75,345.05,88.6;116.9;124.8,1.0
+reserve_frac,S2_CO_3unit,"CO (89,80,10)",89;80;10,0.01,0.25,SP,True,345.05,638.7,246.72,345.05,88.6;116.9;124.8,0.9
+reserve_frac,S3_nk_worst_k3,N-k worst k=3,69;80;89,0.01,1.0,PA,True,567.2,341.93,165.61,57.12,107.0;116.9;88.6,4.7
+reserve_frac,S3_nk_worst_k3,N-k worst k=3,69;80;89,0.01,1.0,SP,True,57.35,95.69,36.76,57.12,107.0;116.9;88.6,35.3
+reserve_frac,S3_nk_worst_k3,N-k worst k=3,69;80;89,0.01,0.5,PA,True,615.25,595.29,165.61,324.94,107.0;116.9;88.6,1.8
+reserve_frac,S3_nk_worst_k3,N-k worst k=3,69;80;89,0.01,0.5,SP,True,328.7,602.23,131.87,324.94,107.0;116.9;88.6,7.0
+reserve_frac,S3_nk_worst_k3,N-k worst k=3,69;80;89,0.01,0.35,PA,True,665.0,1029.6,165.61,659.8,107.0;116.9;88.6,1.1
+reserve_frac,S3_nk_worst_k3,N-k worst k=3,69;80;89,0.01,0.35,SP,True,659.8,1305.93,161.15,659.8,107.0;116.9;88.6,1.3
+reserve_frac,S3_nk_worst_k3,N-k worst k=3,69;80;89,0.01,0.25,PA,True,891.57,1367.71,243.48,889.85,107.0;116.9;88.6,1.0
+reserve_frac,S3_nk_worst_k3,N-k worst k=3,69;80;89,0.01,0.25,SP,True,889.85,1864.26,243.39,889.85,107.0;116.9;88.6,1.0

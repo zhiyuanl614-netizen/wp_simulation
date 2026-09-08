@@ -1,0 +1,92 @@
+{
+  "affected": [
+    89,
+    80,
+    10
+  ],
+  "dt_min": 5.0,
+  "alpha": 1.5,
+  "power_flow": "DC",
+  "cooling_SAET_min": [
+    88.6,
+    116.9,
+    124.8
+  ],
+  "muni_offsets_h": {
+    "CO": [
+      0,
+      0,
+      0
+    ],
+    "DISP": [
+      3.75,
+      9.75,
+      17.0
+    ]
+  },
+  "distribution": {
+    "n_junctions": 399,
+    "n_fail_within": 289,
+    "n_never_fail": 110,
+    "never_fail_pct": 27.6,
+    "min_h": 0.0,
+    "p10_h": 0.0,
+    "median_h": 9.75,
+    "p90_h": 17.0,
+    "max_h": 67.0
+  },
+  "layouts": {
+    "CO": {
+      "name": "同源同位置(取水同/邻节点, t_muni 相同→同时危机)",
+      "method": "联合 LP (缺额脉冲重叠, 共享备用)",
+      "offsets_h": [
+        0,
+        0,
+        0
+      ],
+      "results": {
+        "PA": {
+          "max_deficit_MW": 343.27,
+          "energy_deficit_MWh": 71.93,
+          "max_overload_MW": 163.4
+        },
+        "SP": {
+          "max_deficit_MW": 0.0,
+          "energy_deficit_MWh": 0.0,
+          "max_overload_MW": 36.76
+        },
+        "DP": {
+          "max_deficit_MW": 0.0,
+          "energy_deficit_MWh": 0.0,
+          "max_overload_MW": 36.76
+        }
+      }
+    },
+    "DISP": {
+      "name": "分散取水(P10/P50/P90 代表节点, t_muni 错峰)",
+      "method": "各单机 LP (危机时间隔离; 峰值取 max, 能量取 sum)",
+      "offsets_h": [
+        3.75,
+        9.75,
+        17.0
+      ],
+      "results": {
+        "PA": {
+          "max_deficit_MW": 314.95,
+          "energy_deficit_MWh": 52.48,
+          "max_overload_MW": 151.28
+        },
+        "SP": {
+          "max_deficit_MW": 0.0,
+          "energy_deficit_MWh": 0.0,
+          "max_overload_MW": 23.74
+        },
+        "DP": {
+          "max_deficit_MW": 0.0,
+          "energy_deficit_MWh": 0.0,
+          "max_overload_MW": 23.74
+        }
+      }
+    }
+  }
+}

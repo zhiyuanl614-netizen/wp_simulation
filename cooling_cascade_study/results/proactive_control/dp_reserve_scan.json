@@ -1,0 +1,1303 @@
+{
+ "title": "DP 差异化扫描（over R）＋ LP 备用容量 reserve_frac 扫描（P1-3 首选方案 + P1-2 LP 侧）",
+ "generated": "2026-09-07 03:20:08",
+ "caliber": "ProactiveLP 严格复用（同 ramp_rate_scan）：horizon 200 min, dt 5 min, DC-PTDF, 过载权重 5, PA 因果约束；(A) DP = T_ctrl 1.5×SAET 沿 R 网格；(B) reserve_frac ∈ {1.0,0.5,0.35,0.25} 固定 R=0.01，rest_cap = Pg0 + rf×(Pmax−Pg0)（全部 54 台）",
+ "alpha": 1.5,
+ "r_grid": [
+  0.0025,
+  0.003,
+  0.0035,
+  0.005,
+  0.0075,
+  0.01,
+  0.015,
+  0.02,
+  0.04
+ ],
+ "rf_grid": [
+  1.0,
+  0.5,
+  0.35,
+  0.25
+ ],
+ "r_base": 0.01,
+ "scenarios": [
+  {
+   "name": "S1_single_bus89",
+   "label": "Single bus89",
+   "buses": [
+    89
+   ]
+  },
+  {
+   "name": "S2_CO_3unit",
+   "label": "CO (89,80,10)",
+   "buses": [
+    89,
+    80,
+    10
+   ]
+  },
+  {
+   "name": "S3_nk_worst_k3",
+   "label": "N-k worst k=3",
+   "buses": [
+    69,
+    80,
+    89
+   ]
+  }
+ ],
+ "dp_rows": [
+  {
+   "scenario": "S1_single_bus89",
+   "label": "Single bus89",
+   "buses": [
+    89
+   ],
+   "R_per_min": 0.0025,
+   "reserve_frac": 1.0,
+   "mode": "DP",
+   "saet_min": [
+    88.6
+   ],
+   "feasible": true,
+   "max_deficit_MW": 0.0,
+   "energy_deficit_MWh": 0.0,
+   "max_overload_MW": 80.06,
+   "final_deficit_MW": 0.0,
+   "solve_s": 41.1
+  },
+  {
+   "scenario": "S1_single_bus89",
+   "label": "Single bus89",
+   "buses": [
+    89
+   ],
+   "R_per_min": 0.003,
+   "reserve_frac": 1.0,
+   "mode": "DP",
+   "saet_min": [
+    88.6
+   ],
+   "feasible": true,
+   "max_deficit_MW": 0.0,
+   "energy_deficit_MWh": 0.0,
+   "max_overload_MW": 65.15,
+   "final_deficit_MW": 0.0,
+   "solve_s": 33.6
+  },
+  {
+   "scenario": "S1_single_bus89",
+   "label": "Single bus89",
+   "buses": [
+    89
+   ],
+   "R_per_min": 0.0035,
+   "reserve_frac": 1.0,
+   "mode": "DP",
+   "saet_min": [
+    88.6
+   ],
+   "feasible": true,
+   "max_deficit_MW": 0.0,
+   "energy_deficit_MWh": 0.0,
+   "max_overload_MW": 49.33,
+   "final_deficit_MW": 0.0,
+   "solve_s": 23.9
+  },
+  {
+   "scenario": "S1_single_bus89",
+   "label": "Single bus89",
+   "buses": [
+    89
+   ],
+   "R_per_min": 0.005,
+   "reserve_frac": 1.0,
+   "mode": "DP",
+   "saet_min": [
+    88.6
+   ],
+   "feasible": true,
+   "max_deficit_MW": 0.0,
+   "energy_deficit_MWh": 0.0,
+   "max_overload_MW": 16.52,
+   "final_deficit_MW": 0.0,
+   "solve_s": 6.2
+  },
+  {
+   "scenario": "S1_single_bus89",
+   "label": "Single bus89",
+   "buses": [
+    89
+   ],
+   "R_per_min": 0.0075,
+   "reserve_frac": 1.0,
+   "mode": "DP",
+   "saet_min": [
+    88.6
+   ],
+   "feasible": true,
+   "max_deficit_MW": 0.0,
+   "energy_deficit_MWh": 0.0,
+   "max_overload_MW": 8.77,
+   "final_deficit_MW": 0.0,
+   "solve_s": 2.3
+  },
+  {
+   "scenario": "S1_single_bus89",
+   "label": "Single bus89",
+   "buses": [
+    89
+   ],
+   "R_per_min": 0.01,
+   "reserve_frac": 1.0,
+   "mode": "DP",
+   "saet_min": [
+    88.6
+   ],
+   "feasible": true,
+   "max_deficit_MW": 0.0,
+   "energy_deficit_MWh": 0.0,
+   "max_overload_MW": 0.0,
+   "final_deficit_MW": 0.0,
+   "solve_s": 2.0
+  },
+  {
+   "scenario": "S1_single_bus89",
+   "label": "Single bus89",
+   "buses": [
+    89
+   ],
+   "R_per_min": 0.015,
+   "reserve_frac": 1.0,
+   "mode": "DP",
+   "saet_min": [
+    88.6
+   ],
+   "feasible": true,
+   "max_deficit_MW": 0.0,
+   "energy_deficit_MWh": 0.0,
+   "max_overload_MW": 0.0,
+   "final_deficit_MW": 0.0,
+   "solve_s": 1.5
+  },
+  {
+   "scenario": "S1_single_bus89",
+   "label": "Single bus89",
+   "buses": [
+    89
+   ],
+   "R_per_min": 0.02,
+   "reserve_frac": 1.0,
+   "mode": "DP",
+   "saet_min": [
+    88.6
+   ],
+   "feasible": true,
+   "max_deficit_MW": 0.0,
+   "energy_deficit_MWh": 0.0,
+   "max_overload_MW": 0.0,
+   "final_deficit_MW": 0.0,
+   "solve_s": 1.3
+  },
+  {
+   "scenario": "S1_single_bus89",
+   "label": "Single bus89",
+   "buses": [
+    89
+   ],
+   "R_per_min": 0.04,
+   "reserve_frac": 1.0,
+   "mode": "DP",
+   "saet_min": [
+    88.6
+   ],
+   "feasible": true,
+   "max_deficit_MW": 0.0,
+   "energy_deficit_MWh": 0.0,
+   "max_overload_MW": 0.0,
+   "final_deficit_MW": 0.0,
+   "solve_s": 1.2
+  },
+  {
+   "scenario": "S2_CO_3unit",
+   "label": "CO (89,80,10)",
+   "buses": [
+    89,
+    80,
+    10
+   ],
+   "R_per_min": 0.0025,
+   "reserve_frac": 1.0,
+   "mode": "DP",
+   "saet_min": [
+    88.6,
+    116.9,
+    124.8
+   ],
+   "feasible": true,
+   "max_deficit_MW": 14.24,
+   "energy_deficit_MWh": 3.13,
+   "max_overload_MW": 143.18,
+   "final_deficit_MW": 0.0,
+   "solve_s": 36.0
+  },
+  {
+   "scenario": "S2_CO_3unit",
+   "label": "CO (89,80,10)",
+   "buses": [
+    89,
+    80,
+    10
+   ],
+   "R_per_min": 0.003,
+   "reserve_frac": 1.0,
+   "mode": "DP",
+   "saet_min": [
+    88.6,
+    116.9,
+    124.8
+   ],
+   "feasible": true,
+   "max_deficit_MW": 0.0,
+   "energy_deficit_MWh": 0.0,
+   "max_overload_MW": 138.95,
+   "final_deficit_MW": 0.0,
+   "solve_s": 58.5
+  },
+  {
+   "scenario": "S2_CO_3unit",
+   "label": "CO (89,80,10)",
+   "buses": [
+    89,
+    80,
+    10
+   ],
+   "R_per_min": 0.0035,
+   "reserve_frac": 1.0,
+   "mode": "DP",
+   "saet_min": [
+    88.6,
+    116.9,
+    124.8
+   ],
+   "feasible": true,
+   "max_deficit_MW": 0.0,
+   "energy_deficit_MWh": 0.0,
+   "max_overload_MW": 124.79,
+   "final_deficit_MW": 0.0,
+   "solve_s": 48.5
+  },
+  {
+   "scenario": "S2_CO_3unit",
+   "label": "CO (89,80,10)",
+   "buses": [
+    89,
+    80,
+    10
+   ],
+   "R_per_min": 0.005,
+   "reserve_frac": 1.0,
+   "mode": "DP",
+   "saet_min": [
+    88.6,
+    116.9,
+    124.8
+   ],
+   "feasible": true,
+   "max_deficit_MW": 0.0,
+   "energy_deficit_MWh": 0.0,
+   "max_overload_MW": 75.15,
+   "final_deficit_MW": 0.0,
+   "solve_s": 46.0
+  },
+  {
+   "scenario": "S2_CO_3unit",
+   "label": "CO (89,80,10)",
+   "buses": [
+    89,
+    80,
+    10
+   ],
+   "R_per_min": 0.0075,
+   "reserve_frac": 1.0,
+   "mode": "DP",
+   "saet_min": [
+    88.6,
+    116.9,
+    124.8
+   ],
+   "feasible": true,
+   "max_deficit_MW": 0.0,
+   "energy_deficit_MWh": 0.0,
+   "max_overload_MW": 36.76,
+   "final_deficit_MW": 0.0,
+   "solve_s": 71.3
+  },
+  {
+   "scenario": "S2_CO_3unit",
+   "label": "CO (89,80,10)",
+   "buses": [
+    89,
+    80,
+    10
+   ],
+   "R_per_min": 0.01,
+   "reserve_frac": 1.0,
+   "mode": "DP",
+   "saet_min": [
+    88.6,
+    116.9,
+    124.8
+   ],
+   "feasible": true,
+   "max_deficit_MW": 0.0,
+   "energy_deficit_MWh": 0.0,
+   "max_overload_MW": 36.76,
+   "final_deficit_MW": 0.0,
+   "solve_s": 46.6
+  },
+  {
+   "scenario": "S2_CO_3unit",
+   "label": "CO (89,80,10)",
+   "buses": [
+    89,
+    80,
+    10
+   ],
+   "R_per_min": 0.015,
+   "reserve_frac": 1.0,
+   "mode": "DP",
+   "saet_min": [
+    88.6,
+    116.9,
+    124.8
+   ],
+   "feasible": true,
+   "max_deficit_MW": 0.0,
+   "energy_deficit_MWh": 0.0,
+   "max_overload_MW": 36.76,
+   "final_deficit_MW": 0.0,
+   "solve_s": 33.5
+  },
+  {
+   "scenario": "S2_CO_3unit",
+   "label": "CO (89,80,10)",
+   "buses": [
+    89,
+    80,
+    10
+   ],
+   "R_per_min": 0.02,
+   "reserve_frac": 1.0,
+   "mode": "DP",
+   "saet_min": [
+    88.6,
+    116.9,
+    124.8
+   ],
+   "feasible": true,
+   "max_deficit_MW": 0.0,
+   "energy_deficit_MWh": 0.0,
+   "max_overload_MW": 36.76,
+   "final_deficit_MW": 0.0,
+   "solve_s": 21.1
+  },
+  {
+   "scenario": "S2_CO_3unit",
+   "label": "CO (89,80,10)",
+   "buses": [
+    89,
+    80,
+    10
+   ],
+   "R_per_min": 0.04,
+   "reserve_frac": 1.0,
+   "mode": "DP",
+   "saet_min": [
+    88.6,
+    116.9,
+    124.8
+   ],
+   "feasible": true,
+   "max_deficit_MW": 0.0,
+   "energy_deficit_MWh": 0.0,
+   "max_overload_MW": 36.76,
+   "final_deficit_MW": 0.0,
+   "solve_s": 11.4
+  },
+  {
+   "scenario": "S3_nk_worst_k3",
+   "label": "N-k worst k=3",
+   "buses": [
+    69,
+    80,
+    89
+   ],
+   "R_per_min": 0.0025,
+   "reserve_frac": 1.0,
+   "mode": "DP",
+   "saet_min": [
+    107.0,
+    116.9,
+    88.6
+   ],
+   "feasible": true,
+   "max_deficit_MW": 384.59,
+   "energy_deficit_MWh": 568.44,
+   "max_overload_MW": 145.96,
+   "final_deficit_MW": 240.22,
+   "solve_s": 32.0
+  },
+  {
+   "scenario": "S3_nk_worst_k3",
+   "label": "N-k worst k=3",
+   "buses": [
+    69,
+    80,
+    89
+   ],
+   "R_per_min": 0.003,
+   "reserve_frac": 1.0,
+   "mode": "DP",
+   "saet_min": [
+    107.0,
+    116.9,
+    88.6
+   ],
+   "feasible": true,
+   "max_deficit_MW": 239.82,
+   "energy_deficit_MWh": 350.16,
+   "max_overload_MW": 139.97,
+   "final_deficit_MW": 199.73,
+   "solve_s": 25.2
+  },
+  {
+   "scenario": "S3_nk_worst_k3",
+   "label": "N-k worst k=3",
+   "buses": [
+    69,
+    80,
+    89
+   ],
+   "R_per_min": 0.0035,
+   "reserve_frac": 1.0,
+   "mode": "DP",
+   "saet_min": [
+    107.0,
+    116.9,
+    88.6
+   ],
+   "feasible": true,
+   "max_deficit_MW": 205.74,
+   "energy_deficit_MWh": 263.34,
+   "max_overload_MW": 124.8,
+   "final_deficit_MW": 164.96,
+   "solve_s": 26.0
+  },
+  {
+   "scenario": "S3_nk_worst_k3",
+   "label": "N-k worst k=3",
+   "buses": [
+    69,
+    80,
+    89
+   ],
+   "R_per_min": 0.005,
+   "reserve_frac": 1.0,
+   "mode": "DP",
+   "saet_min": [
+    107.0,
+    116.9,
+    88.6
+   ],
+   "feasible": true,
+   "max_deficit_MW": 91.23,
+   "energy_deficit_MWh": 86.35,
+   "max_overload_MW": 75.15,
+   "final_deficit_MW": 57.16,
+   "solve_s": 26.9
+  },
+  {
+   "scenario": "S3_nk_worst_k3",
+   "label": "N-k worst k=3",
+   "buses": [
+    69,
+    80,
+    89
+   ],
+   "R_per_min": 0.0075,
+   "reserve_frac": 1.0,
+   "mode": "DP",
+   "saet_min": [
+    107.0,
+    116.9,
+    88.6
+   ],
+   "feasible": true,
+   "max_deficit_MW": 57.27,
+   "energy_deficit_MWh": 47.3,
+   "max_overload_MW": 36.76,
+   "final_deficit_MW": 57.12,
+   "solve_s": 45.4
+  },
+  {
+   "scenario": "S3_nk_worst_k3",
+   "label": "N-k worst k=3",
+   "buses": [
+    69,
+    80,
+    89
+   ],
+   "R_per_min": 0.01,
+   "reserve_frac": 1.0,
+   "mode": "DP",
+   "saet_min": [
+    107.0,
+    116.9,
+    88.6
+   ],
+   "feasible": true,
+   "max_deficit_MW": 57.15,
+   "energy_deficit_MWh": 47.02,
+   "max_overload_MW": 36.76,
+   "final_deficit_MW": 57.12,
+   "solve_s": 45.4
+  },
+  {
+   "scenario": "S3_nk_worst_k3",
+   "label": "N-k worst k=3",
+   "buses": [
+    69,
+    80,
+    89
+   ],
+   "R_per_min": 0.015,
+   "reserve_frac": 1.0,
+   "mode": "DP",
+   "saet_min": [
+    107.0,
+    116.9,
+    88.6
+   ],
+   "feasible": true,
+   "max_deficit_MW": 57.12,
+   "energy_deficit_MWh": 46.83,
+   "max_overload_MW": 36.76,
+   "final_deficit_MW": 57.12,
+   "solve_s": 34.9
+  },
+  {
+   "scenario": "S3_nk_worst_k3",
+   "label": "N-k worst k=3",
+   "buses": [
+    69,
+    80,
+    89
+   ],
+   "R_per_min": 0.02,
+   "reserve_frac": 1.0,
+   "mode": "DP",
+   "saet_min": [
+    107.0,
+    116.9,
+    88.6
+   ],
+   "feasible": true,
+   "max_deficit_MW": 57.12,
+   "energy_deficit_MWh": 46.8,
+   "max_overload_MW": 36.76,
+   "final_deficit_MW": 57.12,
+   "solve_s": 38.8
+  },
+  {
+   "scenario": "S3_nk_worst_k3",
+   "label": "N-k worst k=3",
+   "buses": [
+    69,
+    80,
+    89
+   ],
+   "R_per_min": 0.04,
+   "reserve_frac": 1.0,
+   "mode": "DP",
+   "saet_min": [
+    107.0,
+    116.9,
+    88.6
+   ],
+   "feasible": true,
+   "max_deficit_MW": 57.12,
+   "energy_deficit_MWh": 46.79,
+   "max_overload_MW": 36.76,
+   "final_deficit_MW": 57.12,
+   "solve_s": 44.0
+  }
+ ],
+ "rf_rows": [
+  {
+   "scenario": "S1_single_bus89",
+   "label": "Single bus89",
+   "buses": [
+    89
+   ],
+   "R_per_min": 0.01,
+   "reserve_frac": 1.0,
+   "mode": "PA",
+   "saet_min": [
+    88.6
+   ],
+   "feasible": true,
+   "max_deficit_MW": 314.95,
+   "energy_deficit_MWh": 35.93,
+   "max_overload_MW": 151.28,
+   "final_deficit_MW": 0.0,
+   "solve_s": 20.9
+  },
+  {
+   "scenario": "S1_single_bus89",
+   "label": "Single bus89",
+   "buses": [
+    89
+   ],
+   "R_per_min": 0.01,
+   "reserve_frac": 1.0,
+   "mode": "SP",
+   "saet_min": [
+    88.6
+   ],
+   "feasible": true,
+   "max_deficit_MW": 0.0,
+   "energy_deficit_MWh": 0.0,
+   "max_overload_MW": 0.0,
+   "final_deficit_MW": 0.0,
+   "solve_s": 2.0
+  },
+  {
+   "scenario": "S1_single_bus89",
+   "label": "Single bus89",
+   "buses": [
+    89
+   ],
+   "R_per_min": 0.01,
+   "reserve_frac": 0.5,
+   "mode": "PA",
+   "saet_min": [
+    88.6
+   ],
+   "feasible": true,
+   "max_deficit_MW": 314.95,
+   "energy_deficit_MWh": 38.26,
+   "max_overload_MW": 151.28,
+   "final_deficit_MW": 0.0,
+   "solve_s": 6.1
+  },
+  {
+   "scenario": "S1_single_bus89",
+   "label": "Single bus89",
+   "buses": [
+    89
+   ],
+   "R_per_min": 0.01,
+   "reserve_frac": 0.5,
+   "mode": "SP",
+   "saet_min": [
+    88.6
+   ],
+   "feasible": true,
+   "max_deficit_MW": 0.0,
+   "energy_deficit_MWh": 0.0,
+   "max_overload_MW": 53.44,
+   "final_deficit_MW": 0.0,
+   "solve_s": 14.4
+  },
+  {
+   "scenario": "S1_single_bus89",
+   "label": "Single bus89",
+   "buses": [
+    89
+   ],
+   "R_per_min": 0.01,
+   "reserve_frac": 0.35,
+   "mode": "PA",
+   "saet_min": [
+    88.6
+   ],
+   "feasible": true,
+   "max_deficit_MW": 314.95,
+   "energy_deficit_MWh": 36.75,
+   "max_overload_MW": 151.28,
+   "final_deficit_MW": 0.0,
+   "solve_s": 4.4
+  },
+  {
+   "scenario": "S1_single_bus89",
+   "label": "Single bus89",
+   "buses": [
+    89
+   ],
+   "R_per_min": 0.01,
+   "reserve_frac": 0.35,
+   "mode": "SP",
+   "saet_min": [
+    88.6
+   ],
+   "feasible": true,
+   "max_deficit_MW": 0.0,
+   "energy_deficit_MWh": 0.0,
+   "max_overload_MW": 76.61,
+   "final_deficit_MW": 0.0,
+   "solve_s": 11.9
+  },
+  {
+   "scenario": "S1_single_bus89",
+   "label": "Single bus89",
+   "buses": [
+    89
+   ],
+   "R_per_min": 0.01,
+   "reserve_frac": 0.25,
+   "mode": "PA",
+   "saet_min": [
+    88.6
+   ],
+   "feasible": true,
+   "max_deficit_MW": 318.39,
+   "energy_deficit_MWh": 44.12,
+   "max_overload_MW": 153.22,
+   "final_deficit_MW": 0.0,
+   "solve_s": 1.1
+  },
+  {
+   "scenario": "S1_single_bus89",
+   "label": "Single bus89",
+   "buses": [
+    89
+   ],
+   "R_per_min": 0.01,
+   "reserve_frac": 0.25,
+   "mode": "SP",
+   "saet_min": [
+    88.6
+   ],
+   "feasible": true,
+   "max_deficit_MW": 0.0,
+   "energy_deficit_MWh": 0.0,
+   "max_overload_MW": 56.74,
+   "final_deficit_MW": 0.0,
+   "solve_s": 1.3
+  },
+  {
+   "scenario": "S2_CO_3unit",
+   "label": "CO (89,80,10)",
+   "buses": [
+    89,
+    80,
+    10
+   ],
+   "R_per_min": 0.01,
+   "reserve_frac": 1.0,
+   "mode": "PA",
+   "saet_min": [
+    88.6,
+    116.9,
+    124.8
+   ],
+   "feasible": true,
+   "max_deficit_MW": 343.27,
+   "energy_deficit_MWh": 71.93,
+   "max_overload_MW": 163.4,
+   "final_deficit_MW": 0.0,
+   "solve_s": 9.6
+  },
+  {
+   "scenario": "S2_CO_3unit",
+   "label": "CO (89,80,10)",
+   "buses": [
+    89,
+    80,
+    10
+   ],
+   "R_per_min": 0.01,
+   "reserve_frac": 1.0,
+   "mode": "SP",
+   "saet_min": [
+    88.6,
+    116.9,
+    124.8
+   ],
+   "feasible": true,
+   "max_deficit_MW": 0.0,
+   "energy_deficit_MWh": 0.0,
+   "max_overload_MW": 36.76,
+   "final_deficit_MW": 0.0,
+   "solve_s": 40.5
+  },
+  {
+   "scenario": "S2_CO_3unit",
+   "label": "CO (89,80,10)",
+   "buses": [
+    89,
+    80,
+    10
+   ],
+   "R_per_min": 0.01,
+   "reserve_frac": 0.5,
+   "mode": "PA",
+   "saet_min": [
+    88.6,
+    116.9,
+    124.8
+   ],
+   "feasible": true,
+   "max_deficit_MW": 343.27,
+   "energy_deficit_MWh": 75.53,
+   "max_overload_MW": 163.4,
+   "final_deficit_MW": 0.0,
+   "solve_s": 3.8
+  },
+  {
+   "scenario": "S2_CO_3unit",
+   "label": "CO (89,80,10)",
+   "buses": [
+    89,
+    80,
+    10
+   ],
+   "R_per_min": 0.01,
+   "reserve_frac": 0.5,
+   "mode": "SP",
+   "saet_min": [
+    88.6,
+    116.9,
+    124.8
+   ],
+   "feasible": true,
+   "max_deficit_MW": 0.0,
+   "energy_deficit_MWh": 0.0,
+   "max_overload_MW": 130.51,
+   "final_deficit_MW": 0.0,
+   "solve_s": 9.9
+  },
+  {
+   "scenario": "S2_CO_3unit",
+   "label": "CO (89,80,10)",
+   "buses": [
+    89,
+    80,
+    10
+   ],
+   "R_per_min": 0.01,
+   "reserve_frac": 0.35,
+   "mode": "PA",
+   "saet_min": [
+    88.6,
+    116.9,
+    124.8
+   ],
+   "feasible": true,
+   "max_deficit_MW": 343.27,
+   "energy_deficit_MWh": 141.1,
+   "max_overload_MW": 163.4,
+   "final_deficit_MW": 50.54,
+   "solve_s": 1.1
+  },
+  {
+   "scenario": "S2_CO_3unit",
+   "label": "CO (89,80,10)",
+   "buses": [
+    89,
+    80,
+    10
+   ],
+   "R_per_min": 0.01,
+   "reserve_frac": 0.35,
+   "mode": "SP",
+   "saet_min": [
+    88.6,
+    116.9,
+    124.8
+   ],
+   "feasible": true,
+   "max_deficit_MW": 50.54,
+   "energy_deficit_MWh": 76.57,
+   "max_overload_MW": 161.7,
+   "final_deficit_MW": 50.54,
+   "solve_s": 2.5
+  },
+  {
+   "scenario": "S2_CO_3unit",
+   "label": "CO (89,80,10)",
+   "buses": [
+    89,
+    80,
+    10
+   ],
+   "R_per_min": 0.01,
+   "reserve_frac": 0.25,
+   "mode": "PA",
+   "saet_min": [
+    88.6,
+    116.9,
+    124.8
+   ],
+   "feasible": true,
+   "max_deficit_MW": 389.29,
+   "energy_deficit_MWh": 532.62,
+   "max_overload_MW": 246.75,
+   "final_deficit_MW": 345.05,
+   "solve_s": 1.0
+  },
+  {
+   "scenario": "S2_CO_3unit",
+   "label": "CO (89,80,10)",
+   "buses": [
+    89,
+    80,
+    10
+   ],
+   "R_per_min": 0.01,
+   "reserve_frac": 0.25,
+   "mode": "SP",
+   "saet_min": [
+    88.6,
+    116.9,
+    124.8
+   ],
+   "feasible": true,
+   "max_deficit_MW": 345.05,
+   "energy_deficit_MWh": 638.7,
+   "max_overload_MW": 246.72,
+   "final_deficit_MW": 345.05,
+   "solve_s": 0.9
+  },
+  {
+   "scenario": "S3_nk_worst_k3",
+   "label": "N-k worst k=3",
+   "buses": [
+    69,
+    80,
+    89
+   ],
+   "R_per_min": 0.01,
+   "reserve_frac": 1.0,
+   "mode": "PA",
+   "saet_min": [
+    107.0,
+    116.9,
+    88.6
+   ],
+   "feasible": true,
+   "max_deficit_MW": 567.2,
+   "energy_deficit_MWh": 341.93,
+   "max_overload_MW": 165.61,
+   "final_deficit_MW": 57.12,
+   "solve_s": 4.7
+  },
+  {
+   "scenario": "S3_nk_worst_k3",
+   "label": "N-k worst k=3",
+   "buses": [
+    69,
+    80,
+    89
+   ],
+   "R_per_min": 0.01,
+   "reserve_frac": 1.0,
+   "mode": "SP",
+   "saet_min": [
+    107.0,
+    116.9,
+    88.6
+   ],
+   "feasible": true,
+   "max_deficit_MW": 57.35,
+   "energy_deficit_MWh": 95.69,
+   "max_overload_MW": 36.76,
+   "final_deficit_MW": 57.12,
+   "solve_s": 35.3
+  },
+  {
+   "scenario": "S3_nk_worst_k3",
+   "label": "N-k worst k=3",
+   "buses": [
+    69,
+    80,
+    89
+   ],
+   "R_per_min": 0.01,
+   "reserve_frac": 0.5,
+   "mode": "PA",
+   "saet_min": [
+    107.0,
+    116.9,
+    88.6
+   ],
+   "feasible": true,
+   "max_deficit_MW": 615.25,
+   "energy_deficit_MWh": 595.29,
+   "max_overload_MW": 165.61,
+   "final_deficit_MW": 324.94,
+   "solve_s": 1.8
+  },
+  {
+   "scenario": "S3_nk_worst_k3",
+   "label": "N-k worst k=3",
+   "buses": [
+    69,
+    80,
+    89
+   ],
+   "R_per_min": 0.01,
+   "reserve_frac": 0.5,
+   "mode": "SP",
+   "saet_min": [
+    107.0,
+    116.9,
+    88.6
+   ],
+   "feasible": true,
+   "max_deficit_MW": 328.7,
+   "energy_deficit_MWh": 602.23,
+   "max_overload_MW": 131.87,
+   "final_deficit_MW": 324.94,
+   "solve_s": 7.0
+  },
+  {
+   "scenario": "S3_nk_worst_k3",
+   "label": "N-k worst k=3",
+   "buses": [
+    69,
+    80,
+    89
+   ],
+   "R_per_min": 0.01,
+   "reserve_frac": 0.35,
+   "mode": "PA",
+   "saet_min": [
+    107.0,
+    116.9,
+    88.6
+   ],
+   "feasible": true,
+   "max_deficit_MW": 665.0,
+   "energy_deficit_MWh": 1029.6,
+   "max_overload_MW": 165.61,
+   "final_deficit_MW": 659.8,
+   "solve_s": 1.1
+  },
+  {
+   "scenario": "S3_nk_worst_k3",
+   "label": "N-k worst k=3",
+   "buses": [
+    69,
+    80,
+    89
+   ],
+   "R_per_min": 0.01,
+   "reserve_frac": 0.35,
+   "mode": "SP",
+   "saet_min": [
+    107.0,
+    116.9,
+    88.6
+   ],
+   "feasible": true,
+   "max_deficit_MW": 659.8,
+   "energy_deficit_MWh": 1305.93,
+   "max_overload_MW": 161.15,
+   "final_deficit_MW": 659.8,
+   "solve_s": 1.3
+  },
+  {
+   "scenario": "S3_nk_worst_k3",
+   "label": "N-k worst k=3",
+   "buses": [
+    69,
+    80,
+    89
+   ],
+   "R_per_min": 0.01,
+   "reserve_frac": 0.25,
+   "mode": "PA",
+   "saet_min": [
+    107.0,
+    116.9,
+    88.6
+   ],
+   "feasible": true,
+   "max_deficit_MW": 891.57,
+   "energy_deficit_MWh": 1367.71,
+   "max_overload_MW": 243.48,
+   "final_deficit_MW": 889.85,
+   "solve_s": 1.0
+  },
+  {
+   "scenario": "S3_nk_worst_k3",
+   "label": "N-k worst k=3",
+   "buses": [
+    69,
+    80,
+    89
+   ],
+   "R_per_min": 0.01,
+   "reserve_frac": 0.25,
+   "mode": "SP",
+   "saet_min": [
+    107.0,
+    116.9,
+    88.6
+   ],
+   "feasible": true,
+   "max_deficit_MW": 889.85,
+   "energy_deficit_MWh": 1864.26,
+   "max_overload_MW": 243.39,
+   "final_deficit_MW": 889.85,
+   "solve_s": 1.0
+  }
+ ],
+ "dp_phase_points": {
+  "S1_single_bus89": {
+   "sp_zero_down_to_R": 0.0025,
+   "note": "DP 零缺额直到网格下限",
+   "dp_energy_vs_R": {
+    "0.0025": 0.0,
+    "0.003": 0.0,
+    "0.0035": 0.0,
+    "0.005": 0.0,
+    "0.0075": 0.0,
+    "0.01": 0.0,
+    "0.015": 0.0,
+    "0.02": 0.0,
+    "0.04": 0.0
+   },
+   "monotone_in_R": true
+  },
+  "S2_CO_3unit": {
+   "R_star": 0.003,
+   "R_below_nonzero": 0.0025,
+   "note": "DP 相变点 R*_DP ∈ (0.0025, 0.003]",
+   "dp_energy_vs_R": {
+    "0.0025": 3.13,
+    "0.003": 0.0,
+    "0.0035": 0.0,
+    "0.005": 0.0,
+    "0.0075": 0.0,
+    "0.01": 0.0,
+    "0.015": 0.0,
+    "0.02": 0.0,
+    "0.04": 0.0
+   },
+   "monotone_in_R": true
+  },
+  "S3_nk_worst_k3": {
+   "sp_nonzero_up_to_R": 0.04,
+   "note": "DP 缺额直到网格上限仍非零",
+   "dp_energy_vs_R": {
+    "0.0025": 568.44,
+    "0.003": 350.16,
+    "0.0035": 263.34,
+    "0.005": 86.35,
+    "0.0075": 47.3,
+    "0.01": 47.02,
+    "0.015": 46.83,
+    "0.02": 46.8,
+    "0.04": 46.79
+   },
+   "monotone_in_R": true
+  }
+ },
+ "rf_phase_points": {
+  "S1_single_bus89": {
+   "sp_zero_down_to_rf": 0.25,
+   "note": "SP 零缺额直到 rf 下限 0.25",
+   "sp_energy_vs_rf": {
+    "0.25": 0.0,
+    "0.35": 0.0,
+    "0.5": 0.0,
+    "1": 0.0
+   },
+   "monotone_in_rf": true
+  },
+  "S2_CO_3unit": {
+   "rf_star": 0.5,
+   "rf_below_nonzero": 0.35,
+   "note": "备用容量相变点 rf* ∈ (0.35, 0.5]",
+   "sp_energy_vs_rf": {
+    "0.25": 638.7,
+    "0.35": 76.57,
+    "0.5": 0.0,
+    "1": 0.0
+   },
+   "monotone_in_rf": true
+  },
+  "S3_nk_worst_k3": {
+   "sp_nonzero_up_to_rf": 0.25,
+   "note": "SP 缺额直到 rf=1.0 仍非零",
+   "sp_energy_vs_rf": {
+    "0.25": 1864.26,
+    "0.35": 1305.93,
+    "0.5": 602.23,
+    "1": 95.69
+   },
+   "monotone_in_rf": true
+  }
+ },
+ "regression_anchors": [
+  {
+   "check": "DP@R=0.01 CO 峰值/能量/过载 (run_p6·node_sensitivity DP)",
+   "expected": "0/0/36.76",
+   "got": "0.0/0.0/36.76",
+   "ok": true
+  },
+  {
+   "check": "DP@R=0.01 单机 bus89 峰值/能量 (node_sensitivity DISP 单机 DP)",
+   "expected": "0/0",
+   "got": "0.0/0.0",
+   "ok": true
+  },
+  {
+   "check": "rf=1.0 S1_single_bus89 PA = R 扫描 R=0.01 列（峰值/能量）",
+   "expected": "314.95/35.93",
+   "got": "314.95/35.93",
+   "ok": true
+  },
+  {
+   "check": "rf=1.0 S1_single_bus89 SP = R 扫描 R=0.01 列（峰值/能量）",
+   "expected": "0.0/0.0",
+   "got": "0.0/0.0",
+   "ok": true
+  },
+  {
+   "check": "rf=1.0 S2_CO_3unit PA = R 扫描 R=0.01 列（峰值/能量）",
+   "expected": "343.27/71.93",
+   "got": "343.27/71.93",
+   "ok": true
+  },
+  {
+   "check": "rf=1.0 S2_CO_3unit SP = R 扫描 R=0.01 列（峰值/能量）",
+   "expected": "0.0/0.0",
+   "got": "0.0/0.0",
+   "ok": true
+  },
+  {
+   "check": "rf=1.0 S3_nk_worst_k3 PA = R 扫描 R=0.01 列（峰值/能量）",
+   "expected": "567.2/341.93",
+   "got": "567.2/341.93",
+   "ok": true
+  },
+  {
+   "check": "rf=1.0 S3_nk_worst_k3 SP = R 扫描 R=0.01 列（峰值/能量）",
+   "expected": "57.35/95.69",
+   "got": "57.35/95.69",
+   "ok": true
+  }
+ ],
+ "anchors_all_ok": true,
+ "notes": [
+  "DP 语义与 run_p6/node_sensitivity 一致：受影响机组在 1.5×SAET 窗口线性软着陆（更长窗口→备用更多爬坡积累）",
+  "rf=1.0 行与 ramp_rate_scan.json 的 R=0.01 列为同一 LP（逐位一致，作为自洽校验）",
+  "备用容量型缺额（rf 过低时系统总可用容量 < 负荷 4242 MW）与网络型地板（k=3 的 57.12 MW）、爬坡型相变（CO 的 R*）为三种可区分机制"
+ ]
+}

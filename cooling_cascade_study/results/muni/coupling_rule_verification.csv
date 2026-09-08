@@ -1,0 +1,55 @@
+bus,junction,stratum,Pg_MW,rule,t_fail_h,t_fault_after_s,SAET_min,flow_before,flow_after,ok_t,ok_head_only,ok_zero,ok_saet,ok
+1,J154,Q1_fast,0.0,triggered,33.5,99000.0,>24h,0.032,0.0,True,True,True,True,True
+4,J156,Q1_fast,0.0,triggered,33.5,99000.0,>24h,0.032,0.0,True,True,True,True,True
+6,J273,Q1_fast,0.0,triggered,32.0,93600.0,>24h,0.032,0.0,True,True,True,True,True
+8,J102,Q1_fast,0.0,triggered,33.5,99000.0,>24h,0.032,0.0,True,True,True,True,True
+10,J197,never,,not_triggered(<28m 未在72h内出现),,,,,,,,,,True
+12,J162,Q1_fast,85.0,triggered,33.5,99000.0,750.3,0.062,0.0,True,True,True,True,True
+15,J97,Q1_fast,0.0,triggered,33.5,99000.0,>24h,0.032,0.0,True,True,True,True,True
+18,J101,Q2,0.0,triggered,34.0,100800.0,>24h,0.032,0.0,True,True,True,True,True
+19,J1158,Q2,0.0,triggered,33.75,99900.0,>24h,0.032,0.0,True,True,True,True,True
+24,J198,Q2,0.0,triggered,34.75,103500.0,>24h,0.032,0.0,True,True,True,True,True
+25,J314,Q2,220.0,triggered,34.75,103500.0,281.8,0.159,0.0,True,True,True,True,True
+26,J365,Q2,314.0,triggered,33.5,99000.0,192.9,0.226,0.0,True,True,True,True,True
+27,J374,Q2,0.0,triggered,34.75,103500.0,>24h,0.032,0.0,True,True,True,True,True
+31,J5,Q2,7.0,triggered,33.5,99000.0,>24h,0.032,0.0,True,True,True,True,True
+32,J377,Q2,0.0,triggered,34.75,103500.0,>24h,0.032,0.0,True,True,True,True,True
+34,J217,Q2,0.0,triggered,34.75,103500.0,>24h,0.032,0.0,True,True,True,True,True
+36,J179,Q2,0.0,triggered,34.75,103500.0,>24h,0.032,0.0,True,True,True,True,True
+40,J177,Q2,0.0,triggered,35.0,104400.0,>24h,0.032,0.0,True,True,True,True,True
+42,J218,Q2,0.0,triggered,34.75,103500.0,>24h,0.032,0.0,True,True,True,True,True
+46,J1024,Q3,19.0,triggered,35.5,106200.0,>24h,0.032,0.0,True,True,True,True,True
+49,J186,Q3,204.0,triggered,36.0,108000.0,305.0,0.148,0.0,True,True,True,True,True
+54,J180,Q3,48.0,triggered,36.0,108000.0,1326.7,0.036,0.0,True,True,True,True,True
+55,J83,Q3,0.0,triggered,35.5,106200.0,>24h,0.032,0.0,True,True,True,True,True
+56,J136,Q3,0.0,triggered,37.75,114300.0,>24h,0.032,0.0,True,True,True,True,True
+59,J283,Q3,155.0,triggered,37.75,114300.0,406.1,0.112,0.0,True,True,True,True,True
+61,J494,Q3,160.0,triggered,37.75,114300.0,392.9,0.116,0.0,True,True,True,True,True
+62,J573,Q3,0.0,triggered,37.75,114300.0,>24h,0.032,0.0,True,True,True,True,True
+65,J27,Q3,391.0,triggered,46.0,144000.0,151.9,0.281,0.0,True,True,True,True,True
+66,J90,Q3,392.0,triggered,46.0,144000.0,151.5,0.282,0.0,True,True,True,True,True
+69,J16,Q4_slow,516.4,triggered,46.0,144000.0,111.4,0.374,0.0,True,True,True,True,True
+70,J318,Q4_slow,0.0,triggered,45.0,140400.0,>24h,0.032,0.0,True,True,True,True,True
+72,J76,Q4_slow,0.0,triggered,37.25,112500.0,>24h,0.032,0.0,True,True,True,True,True
+73,J571,Q4_slow,0.0,triggered,67.0,219600.0,>24h,0.032,0.0,True,True,True,True,True
+74,J59,Q4_slow,0.0,triggered,46.0,144000.0,>24h,0.032,0.0,True,True,True,True,True
+76,J246,Q4_slow,0.0,triggered,67.0,219600.0,>24h,0.032,0.0,True,True,True,True,True
+77,J133,Q4_slow,0.0,triggered,67.0,219600.0,>24h,0.032,0.0,True,True,True,True,True
+80,J371,never,,not_triggered(<28m 未在72h内出现),,,,,,,,,,True
+85,J321,Q4_slow,0.0,triggered,67.0,219600.0,>24h,0.032,0.0,True,True,True,True,True
+87,J91,Q4_slow,4.0,triggered,67.0,219600.0,>24h,0.032,0.0,True,True,True,True,True
+89,J411,Q2,607.0,triggered,34.75,103500.0,92.4,0.436,0.0,True,True,True,True,True
+90,J1169,never,,not_triggered(<28m 未在72h内出现),,,,,,,,,,True
+91,J145,never,,not_triggered(<28m 未在72h内出现),,,,,,,,,,True
+92,J157,never,,not_triggered(<28m 未在72h内出现),,,,,,,,,,True
+99,J184,never,,not_triggered(<28m 未在72h内出现),,,,,,,,,,True
+100,J222,never,,not_triggered(<28m 未在72h内出现),,,,,,,,,,True
+103,J255,never,,not_triggered(<28m 未在72h内出现),,,,,,,,,,True
+104,J29,never,,not_triggered(<28m 未在72h内出现),,,,,,,,,,True
+105,J32,never,,not_triggered(<28m 未在72h内出现),,,,,,,,,,True
+107,J347,never,,not_triggered(<28m 未在72h内出现),,,,,,,,,,True
+110,J355,never,,not_triggered(<28m 未在72h内出现),,,,,,,,,,True
+111,J364,never,,not_triggered(<28m 未在72h内出现),,,,,,,,,,True
+112,J406,never,,not_triggered(<28m 未在72h内出现),,,,,,,,,,True
+113,J504,never,,not_triggered(<28m 未在72h内出现),,,,,,,,,,True
+116,J94,never,,not_triggered(<28m 未在72h内出现),,,,,,,,,,True
