@@ -14,11 +14,11 @@
 
 ## 数据与代码可用性
 
-本文全部模型、分析与绘图代码（`src/` 四模块 41 个源文件）、全部仿真结果数据（`results/` 23 个 JSON/CSV/DB 文件）与章节正稿（`docs/paper_chapters/`）拟归档 Zenodo 并申请 DOI 公开（对齐参照文献 [1] 的开源实践）；归档前可由通讯作者索取。电力侧测试系统为公开的 IEEE 118 母线标准算例（Power Systems Test Case Archive [6]）；市政侧 D-town 管网数据（Ostfeld 2016, Battle of the Water Network Models, University of Kentucky Libraries [5]）按 CC BY-NC 4.0 协议使用并于致谢署名，归档仓库不含该原始数据文件、仅含下载指引与衍生结果。作者贡献（CRediT）、基金资助与利益冲突声明于投稿前补齐。
+本文全部模型、分析与绘图代码（`src/` 四模块核心计算与绘图脚本）、全部仿真结果数据（`results/` 23 个 JSON/CSV/DB 文件）、真实同址 Shelby County 基准数据与算例（`data/shelby_county/`）与章节正稿（`docs/paper_chapters/`）拟归档 Zenodo 并申请 DOI 公开（对齐参照文献 [1] 的开源实践）；归档前可由通讯作者索取。电力侧测试系统为公开的 IEEE 118 母线标准算例（Power Systems Test Case Archive [6]）；市政侧 D-town 管网数据（Ostfeld 2016, Battle of the Water Network Models, University of Kentucky Libraries [5]）按 CC BY-NC 4.0 协议使用并于致谢署名，归档仓库不含该原始数据文件、仅含下载指引与衍生结果；Shelby County 水-电相互依赖基准数据源自 Rice University SISSRA 开放数据库 [18] 与文献 [3,15-17]。作者贡献（CRediT）、基金资助与利益冲突声明于投稿前补齐。
 
 ## 致谢（占位）
 
-感谢 Battle of the Water Network Models（University of Kentucky Libraries）以 CC BY-NC 4.0 协议公开 D-town 管网数据（A. Ostfeld 存档 [5]；原始设计见 Marchi 等 [4]）。其余致谢对象（数据提供方、资助机构、有益讨论者）于投稿前补齐。
+感谢 Battle of the Water Network Models（University of Kentucky Libraries）以 CC BY-NC 4.0 协议公开 D-town 管网数据（A. Ostfeld 存档 [5]；原始设计见 Marchi 等 [4]）。感谢 Rice University SISSRA 研究组公开 Shelby County 相互依赖网络基准数据 [18]。其余致谢对象（数据提供方、资助机构、有益讨论者）于投稿前补齐。
 
 ---
 
@@ -31,3 +31,4 @@
 - [ ] Nomenclature 符号表（由 `docs/mathematical_modeling.md` 符号约定扩成表）；
 - [ ] Highlights 5 条＋Cover letter；
 - [ ] Zenodo 归档（含版本号与 DOI 回填正文）。
+- [x] 外部验证数据：已检索并获取真实 **Shelby County（美国田纳西州孟菲斯大都会区）水-电系统** 基准数据（参照文献 [3] Wang, Magoua & Li, *Autom. Constr.* 133:104008, 2022 及 Dueñas-Osorio 团队 SISSRA 数据库），已完成标准化处理、PYPOWER/WNTR 算例生成与仿真校验（归档于 `data/shelby_county/`），并在 §3.4 完成外部验证叙事与测试系统对比。

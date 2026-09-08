@@ -25,7 +25,7 @@ OUT = ROOT / "论文完整版.html"
 MATHJAX_URL = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"
 TODAY = "2026-09-07"
 
-EXPECT = {"img": 14, "table": 9, "figure": 20}  # 14 图 + 表 1–6（另 ch2 3 张不占号结构表）
+EXPECT = {"img": 14, "table": 10, "figure": 21}  # 14 图 + 表 1–7（另 ch2 3 张不占号结构表，共 10 张表）
 
 
 def main():
@@ -232,8 +232,8 @@ mjx-container{overflow-x:auto;overflow-y:hidden;max-width:100%;}
         problems.append(f"表格数 {body.count('<table>')} ≠ {EXPECT['table']}")
     if n_fig_img[0] != EXPECT["img"]:
         problems.append(f"图 figure 包装 {n_fig_img[0]} ≠ {EXPECT['img']}")
-    if n_fig_tab[0] != 6:
-        problems.append(f"表 figure 包装 {n_fig_tab[0]} ≠ 6")
+    if n_fig_tab[0] != 7:
+        problems.append(f"表 figure 包装 {n_fig_tab[0]} ≠ 7")
     if body.count("<figure") != EXPECT["figure"]:
         problems.append(f"figure 总数 {body.count('<figure>')} ≠ {EXPECT['figure']}")
     if problems:

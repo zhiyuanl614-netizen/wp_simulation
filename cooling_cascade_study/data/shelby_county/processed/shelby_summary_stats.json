@@ -1,0 +1,43 @@
+{
+  "dataset_name": "Shelby County Interdependent Infrastructure Benchmark",
+  "location": "Shelby County, Tennessee, USA (Memphis Metropolitan Area)",
+  "source_authorities": [
+    "MLGW (Memphis Light, Gas and Water)",
+    "TVA (Tennessee Valley Authority)"
+  ],
+  "literature_foundations": [
+    "Chang et al. (1996) MCEER-96-0011",
+    "Shinozuka et al. (1998) MCEER-98-MN02",
+    "Adachi & Ellingwood (2008) RESS 93(1):78-88",
+    "Gonzalez et al. (2016) CA-CIE 31(5):334-350",
+    "Wang, Magoua & Li (2022) Autom. Constr. 133:104008"
+  ],
+  "power_network": {
+    "total_buses": 75,
+    "gate_stations_generators": 9,
+    "substations_23kv": 17,
+    "substations_12kv": 25,
+    "intersections": 24,
+    "transmission_lines": 93,
+    "total_generation_capacity_mw": 1000.0,
+    "total_load_demand_mw": 1000.000000011
+  },
+  "water_network": {
+    "total_nodes": 49,
+    "storage_tanks": 6,
+    "pumping_stations": 9,
+    "distribution_nodes": 34,
+    "pipes": 71,
+    "total_supply_capacity": 999.9999999999999,
+    "total_customer_demand": 1000.0
+  },
+  "interdependency": {
+    "total_coupling_links": 73,
+    "power_to_water": 21,
+    "water_to_power": 1,
+    "power_to_gas": 3,
+    "gas_to_power": 2,
+    "power_to_telecom": 23,
+    "telecom_to_power": 23
+  }
+}

@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" width="1000" height="520" style="background:#ffffff; font-family:Arial, Helvetica, sans-serif;">
+  <defs>
+    <marker id="arrowB" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#1b4f72"/>
+    </marker>
+    <marker id="arrowR" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#c0392b"/>
+    </marker>
+    <marker id="arrowG" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#27ae60"/>
+    </marker>
+  </defs>
+
+  <!-- Outer Boundary -->
+  <rect x="15" y="15" width="970" height="490" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+
+  <!-- Top Section: Water Domain Slow Dynamics (Buffer Depletion Timeline) -->
+  <g transform="translate(35, 35)">
+    <rect x="0" y="0" width="930" height="145" rx="6" fill="#eaf3fb" stroke="#2980b9" stroke-width="1.5"/>
+    <text x="20" y="26" font-size="14" font-weight="bold" fill="#1b4f72">水侧慢动态 · 冷却储水缓冲耗竭时间轴 (Water-side Slow Dynamics: Minutes to Hours)</text>
+
+    <!-- Main Axis Line -->
+    <line x1="50" y1="80" x2="880" y2="80" stroke="#1b4f72" stroke-width="2.5" marker-end="url(#arrowB)"/>
+
+    <!-- Point 0: Municipal Outage -->
+    <circle cx="90" cy="80" r="6" fill="#c0392b"/>
+    <text x="90" y="60" font-size="11" font-weight="bold" text-anchor="middle" fill="#c0392b">t = 0</text>
+    <text x="90" y="105" font-size="10" font-weight="bold" text-anchor="middle" fill="#1b4f72">市政失压</text>
+    <text x="90" y="120" font-size="9" text-anchor="middle" fill="#5b6b7a">H &lt; 28 m (补水停)</text>
+
+    <!-- Buffer Period: SAET Window -->
+    <rect x="130" y="45" width="480" height="25" rx="4" fill="#d4e6f7" stroke="#2980b9" stroke-width="1"/>
+    <text x="370" y="62" font-size="11" font-weight="bold" text-anchor="middle" fill="#1b4f72">★ 冷却水系统储水缓冲耗竭窗口 (SAET = 88.6 – 124.8 min) · 可用主动控制时间</text>
+
+    <!-- Point SAET: Tank drained, condenser trips -->
+    <circle cx="610" cy="80" r="6" fill="#e74c3c"/>
+    <text x="610" y="40" font-size="11" font-weight="bold" text-anchor="middle" fill="#c0392b">t = SAET (≈ 92 min)</text>
+    <text x="610" y="105" font-size="10" font-weight="bold" text-anchor="middle" fill="#c0392b">保护动作跳机</text>
+    <text x="610" y="120" font-size="9" text-anchor="middle" fill="#5b6b7a">Pc &gt; 35 kPa 强迫跳闸</text>
+
+    <!-- Post Trip Horizon -->
+    <text x="760" y="105" font-size="10" text-anchor="middle" fill="#5b6b7a">事故后恢复期</text>
+    <text x="760" y="120" font-size="9" text-anchor="middle" fill="#5b6b7a">t &gt; 200 min</text>
+  </g>
+
+  <!-- Middle Bridge: Fast Cyber / ICS Link -->
+  <g transform="translate(35, 190)">
+    <rect x="0" y="0" width="930" height="40" rx="4" fill="#fef9e7" stroke="#e08a1e" stroke-width="1.2"/>
+    <text x="465" y="25" font-size="12" font-weight="bold" fill="#7e5109" text-anchor="middle">⚡ 信息层快响应 (Cyber Fast Dynamics: Milliseconds to Seconds) —— 跨域早期预警零时延送达电力调度 EMS</text>
+  </g>
+
+  <!-- Bottom Left: Passive Control (No Warning) -->
+  <g transform="translate(35, 245)">
+    <rect x="0" y="0" width="455" height="245" rx="6" fill="#fdedec" stroke="#c0392b" stroke-width="1.5"/>
+    <text x="20" y="28" font-size="13" font-weight="bold" fill="#922b21">被动控制 (PA: 无跨域预警)</text>
+    <text x="20" y="48" font-size="10" fill="#5b6b7a">• 信息盲区：电力调度在机组突跳前对市政危机完全未知</text>
+
+    <!-- Passive timeline -->
+    <line x1="30" y1="100" x2="420" y2="100" stroke="#c0392b" stroke-width="1.5" marker-end="url(#arrowR)"/>
+    <circle cx="50" cy="100" r="4" fill="#5b6b7a"/>
+    <text x="50" y="85" font-size="9" text-anchor="middle" fill="#5b6b7a">t = 0</text>
+    <text x="50" y="120" font-size="9" text-anchor="middle" fill="#5b6b7a">无预警/不动作</text>
+
+    <circle cx="240" cy="100" r="5" fill="#c0392b"/>
+    <text x="240" y="85" font-size="9" font-weight="bold" text-anchor="middle" fill="#c0392b">t = SAET (突跳)</text>
+    <text x="240" y="120" font-size="9" font-weight="bold" text-anchor="middle" fill="#c0392b">机组瞬间脱网</text>
+
+    <!-- Consequence box -->
+    <rect x="25" y="145" width="405" height="85" rx="4" fill="#ffffff" stroke="#c0392b" stroke-width="1"/>
+    <text x="35" y="168" font-size="11" font-weight="bold" fill="#c0392b">被动控制后果 (Passive Consequences):</text>
+    <text x="35" y="188" font-size="10" fill="#1e293b">1. 备用在突跳后才起机，受爬坡率限制来不及填补缺口；</text>
+    <text x="35" y="206" font-size="10" font-weight="bold" fill="#c0392b">2. 导致单机 485.6 MW 峰值缺额、49.1 MWh 损失电量；</text>
+    <text x="35" y="222" font-size="10" fill="#5b6b7a">3. 同源三机造成 343.3 MW 峰值缺额、71.9 MWh 损失。</text>
+  </g>
+
+  <!-- Bottom Right: Proactive Control (With Early Warning) -->
+  <g transform="translate(510, 245)">
+    <rect x="0" y="0" width="455" height="245" rx="6" fill="#eafaf1" stroke="#27ae60" stroke-width="1.5"/>
+    <text x="20" y="28" font-size="13" font-weight="bold" fill="#1e8449">主动控制 (SP/DP: 早期预警驱动)</text>
+    <text x="20" y="48" font-size="10" fill="#5b6b7a">• 跨域协同：t=0 接收预警，主动利用 SAET 缓冲窗口协同调度</text>
+
+    <!-- Proactive timeline -->
+    <line x1="30" y1="100" x2="420" y2="100" stroke="#27ae60" stroke-width="1.5" marker-end="url(#arrowG)"/>
+    <circle cx="50" cy="100" r="4" fill="#27ae60"/>
+    <text x="50" y="85" font-size="9" font-weight="bold" text-anchor="middle" fill="#27ae60">t = 0 (预警)</text>
+    <text x="50" y="120" font-size="9" font-weight="bold" text-anchor="middle" fill="#27ae60">备用提前起机</text>
+
+    <!-- Ramp / Runback zone -->
+    <rect x="50" y="70" width="200" height="15" rx="2" fill="#d1f2eb"/>
+    <text x="150" y="82" font-size="8" font-weight="bold" text-anchor="middle" fill="#0e6251">受影响机组 Runback 软着陆</text>
+
+    <circle cx="250" cy="100" r="5" fill="#27ae60"/>
+    <text x="250" y="85" font-size="9" font-weight="bold" text-anchor="middle" fill="#27ae60">t = SAET (平稳过渡)</text>
+    <text x="250" y="120" font-size="9" font-weight="bold" text-anchor="middle" fill="#27ae60">备用已足额就位</text>
+
+    <!-- Proactive value box -->
+    <rect x="25" y="145" width="405" height="85" rx="4" fill="#ffffff" stroke="#27ae60" stroke-width="1"/>
+    <text x="35" y="168" font-size="11" font-weight="bold" fill="#1e8449">主动控制收益 (Proactive Benefits):</text>
+    <text x="35" y="188" font-size="10" fill="#1e293b">1. 充分利用 88.6–124.8 min 慢动态缓冲窗口进行平滑爬坡；</text>
+    <text x="35" y="206" font-size="10" font-weight="bold" fill="#1e8449">2. 峰值缺额 485.6 MW → 0 MW，损失电量 49.1 MWh → 0 MWh；</text>
+    <text x="35" y="222" font-size="10" fill="#5b6b7a">3. k ≤ 2 组合失效下全部实现 0 缺额 (适用边界清晰确定)。</text>
+  </g>
+</svg>
