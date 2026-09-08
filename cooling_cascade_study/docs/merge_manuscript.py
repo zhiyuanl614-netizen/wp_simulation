@@ -263,9 +263,9 @@ def main():
         if not re.search(pat, doc):
             problems.append(f"图 {n} 图片与图注未紧邻")
 
-    # 表：表 1–6 各一次
+    # 表：表 1–7 各一次
     tabs = re.findall(r"^\*\*表 (\d+)　", doc, re.M)
-    if sorted(map(int, tabs)) != [1, 2, 3, 4, 5, 6]:
+    if sorted(map(int, tabs)) != list(range(1, 8)):
         problems.append(f"表注序号异常：{tabs}")
 
     # H1 序列
@@ -295,11 +295,11 @@ def main():
 
     # 图/表正文引述计数（报告用；图 4/表 4 应≥2）
     fig_mentions = {n: len(re.findall(rf"图 {n}(?!\d)", doc)) for n in range(1, 15)}
-    tab_mentions = {n: len(re.findall(rf"表 {n}(?!\d)", doc)) for n in range(1, 7)}
+    tab_mentions = {n: len(re.findall(rf"表 {n}(?!\d)", doc)) for n in range(1, 8)}
     for n in (4,):
         if fig_mentions[n] < 2:
             problems.append(f"图 {n} 缺正文引述")
-    for n in (1, 2, 3, 4, 5, 6):
+    for n in range(1, 8):
         if tab_mentions[n] < 2:
             problems.append(f"表 {n} 缺正文引述")
 
