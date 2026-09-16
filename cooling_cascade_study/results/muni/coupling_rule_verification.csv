@@ -1,0 +1,7 @@
+rank,bus,junction,Pg_MW,Pmax_MW,demand_Lps,rule,t_fail_h,t_fault_after_s,SAET_min,flow_before,flow_after,ok_t,ok_head_only,ok_zero,ok_saet,ok
+1,89,J102,607.0,707.0,2.3624,triggered,33.5,99000.0,92.4,0.436,0.0,True,True,True,True,True
+2,80,J97,477.0,577.0,1.0251,triggered,33.5,99000.0,121.8,0.343,0.0,True,True,True,True,True
+3,10,J198,450.0,550.0,0.0392,triggered,34.75,103500.0,130.0,0.324,0.0,True,True,True,True,True
+4,66,J5,392.0,492.0,0.1942,triggered,33.5,99000.0,151.5,0.282,0.0,True,True,True,True,True
+5,65,J217,391.0,491.0,1.9178,triggered,34.75,103500.0,151.9,0.281,0.0,True,True,True,True,True
+6,26,J177,314.0,414.0,1.238,triggered,35.0,104400.0,192.9,0.226,0.0,True,True,True,True,True
