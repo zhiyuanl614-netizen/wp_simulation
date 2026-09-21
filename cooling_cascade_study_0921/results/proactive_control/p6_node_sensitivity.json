@@ -1,0 +1,124 @@
+{
+  "version": "v2",
+  "affected": [
+    89,
+    80,
+    10,
+    66,
+    65,
+    26
+  ],
+  "dt_min": 5.0,
+  "alpha": 1.5,
+  "power_flow": "DC",
+  "cooling_SAET_min": [
+    92.4,
+    121.8,
+    130.0,
+    151.5,
+    151.9,
+    192.9
+  ],
+  "intake_nodes": [
+    "J102",
+    "J97",
+    "J198",
+    "J5",
+    "J217",
+    "J177"
+  ],
+  "muni_tfail_BST_h": [
+    1.25,
+    1.75,
+    3.75,
+    3.75,
+    7.0,
+    9.0
+  ],
+  "muni_offsets_h": {
+    "CO": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "DISP": [
+      0.0,
+      0.5,
+      2.5,
+      2.5,
+      5.75,
+      7.75
+    ]
+  },
+  "horizon_min": {
+    "CO": 300.0,
+    "DISP": 790.0
+  },
+  "method": {
+    "CO": "联合 LP, τ=0 (反事实共因: 6 厂同时危机)",
+    "DISP": "联合 LP + muni_offset_min (指定布置真实错峰; v2 取消单机分解)"
+  },
+  "layouts": {
+    "CO": {
+      "name": "同源同时(反事实共因, τ=0 → 危机完全重叠)",
+      "method": "联合 LP, τ=0 (反事实共因: 6 厂同时危机)",
+      "offsets_h": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "results": {
+        "PA": {
+          "max_deficit_MW": 334.88,
+          "energy_deficit_MWh": 59.61,
+          "max_overload_MW": 165.75
+        },
+        "SP": {
+          "max_deficit_MW": 0.0,
+          "energy_deficit_MWh": 0.0,
+          "max_overload_MW": 36.76
+        },
+        "DP": {
+          "max_deficit_MW": 0.0,
+          "energy_deficit_MWh": 0.0,
+          "max_overload_MW": 36.76
+        }
+      }
+    },
+    "DISP": {
+      "name": "指定取水布置(6 节点 B-ST 真实错峰)",
+      "method": "联合 LP + muni_offset_min (指定布置真实错峰; v2 取消单机分解)",
+      "offsets_h": [
+        0.0,
+        0.5,
+        2.5,
+        2.5,
+        5.75,
+        7.75
+      ],
+      "results": {
+        "PA": {
+          "max_deficit_MW": 334.88,
+          "energy_deficit_MWh": 43.73,
+          "max_overload_MW": 165.75
+        },
+        "SP": {
+          "max_deficit_MW": 0.0,
+          "energy_deficit_MWh": 0.0,
+          "max_overload_MW": 36.76
+        },
+        "DP": {
+          "max_deficit_MW": 0.0,
+          "energy_deficit_MWh": 0.0,
+          "max_overload_MW": 36.76
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,186 @@
+{
+ "version": "v3",
+ "date": "2026-09-20",
+ "semantics": "DISP B-ST 相对偏移; 置换=把 t_fail 时序重派到机组 (等价于备选指定配对); R=0.01, DC, dt=5, 时域覆盖 max(offset+1.5*SUET)+30, SP T_ctrl=SUET",
+ "buses": [
+  89,
+  80,
+  10,
+  66,
+  65,
+  26
+ ],
+ "tfail_h": [
+  1.25,
+  1.75,
+  3.75,
+  3.75,
+  7.0,
+  9.0
+ ],
+ "saet_min": [
+  92.4,
+  121.8,
+  130.0,
+  151.5,
+  151.9,
+  192.9
+ ],
+ "perms": {
+  "identity": {
+   "perm": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "offsets_h": [
+    0.0,
+    0.5,
+    2.5,
+    2.5,
+    5.75,
+    7.75
+   ],
+   "horizon_min": 790.0,
+   "PA": {
+    "max_deficit_MW": 334.88,
+    "energy_deficit_MWh": 43.73,
+    "max_overload_MW": 165.75,
+    "wall_s": 260.9
+   },
+   "SP": {
+    "max_deficit_MW": 0.0,
+    "energy_deficit_MWh": 0.0,
+    "max_overload_MW": 36.76,
+    "wall_s": 316.9
+   }
+  },
+  "reverse": {
+   "perm": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ],
+   "offsets_h": [
+    7.75,
+    5.75,
+    2.5,
+    2.5,
+    0.5,
+    0.0
+   ],
+   "horizon_min": 640.0,
+   "PA": {
+    "max_deficit_MW": 85.97,
+    "energy_deficit_MWh": 8.47,
+    "max_overload_MW": 132.69,
+    "wall_s": 109.3
+   },
+   "SP": {
+    "max_deficit_MW": 0.0,
+    "energy_deficit_MWh": 0.0,
+    "max_overload_MW": 37.01,
+    "wall_s": 67.2
+   }
+  },
+  "rotate1": {
+   "perm": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    0
+   ],
+   "offsets_h": [
+    0.5,
+    2.5,
+    2.5,
+    5.75,
+    7.75,
+    0.0
+   ],
+   "horizon_min": 730.0,
+   "PA": {
+    "max_deficit_MW": 334.88,
+    "energy_deficit_MWh": 43.73,
+    "max_overload_MW": 165.75,
+    "wall_s": 158.0
+   },
+   "SP": {
+    "max_deficit_MW": 0.0,
+    "energy_deficit_MWh": 0.0,
+    "max_overload_MW": 36.76,
+    "wall_s": 186.3
+   }
+  },
+  "rand42": {
+   "perm": [
+    0,
+    1,
+    5,
+    2,
+    4,
+    3
+   ],
+   "offsets_h": [
+    0.0,
+    0.5,
+    7.75,
+    2.5,
+    5.75,
+    2.5
+   ],
+   "horizon_min": 690.0,
+   "PA": {
+    "max_deficit_MW": 334.88,
+    "energy_deficit_MWh": 43.73,
+    "max_overload_MW": 165.75,
+    "wall_s": 199.4
+   },
+   "SP": {
+    "max_deficit_MW": 0.0,
+    "energy_deficit_MWh": 0.0,
+    "max_overload_MW": 36.76,
+    "wall_s": 234.7
+   }
+  },
+  "rand7": {
+   "perm": [
+    3,
+    5,
+    0,
+    2,
+    1,
+    4
+   ],
+   "offsets_h": [
+    2.5,
+    7.75,
+    0.0,
+    2.5,
+    0.5,
+    5.75
+   ],
+   "horizon_min": 680.0,
+   "PA": {
+    "max_deficit_MW": 114.95,
+    "energy_deficit_MWh": 9.58,
+    "max_overload_MW": 102.56,
+    "wall_s": 85.9
+   },
+   "SP": {
+    "max_deficit_MW": 0.0,
+    "energy_deficit_MWh": 0.0,
+    "max_overload_MW": 36.76,
+    "wall_s": 50.9
+   }
+  }
+ }
+}

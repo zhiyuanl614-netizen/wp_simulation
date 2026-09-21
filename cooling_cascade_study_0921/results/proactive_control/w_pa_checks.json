@@ -1,0 +1,51 @@
+{
+ "config": {
+  "buses": [
+   89,
+   80,
+   10,
+   66,
+   65,
+   26
+  ],
+  "horizon_min": 300.0,
+  "dt_min": 5.0,
+  "ramp": 0.01,
+  "enforce_dc": true
+ },
+ "A_w_sensitivity_SP": {
+  "1.0": {
+   "max_deficit_MW": 0.0,
+   "energy_deficit_MWh": 0.0,
+   "max_overload_MW": 36.76,
+   "feasible": true,
+   "wall_s": 59.4
+  },
+  "5.0": {
+   "max_deficit_MW": 0.0,
+   "energy_deficit_MWh": 0.0,
+   "max_overload_MW": 36.76,
+   "feasible": true,
+   "wall_s": 41.8
+  },
+  "20.0": {
+   "max_deficit_MW": 0.0,
+   "energy_deficit_MWh": 0.0,
+   "max_overload_MW": 36.76,
+   "feasible": true,
+   "wall_s": 51.6
+  }
+ },
+ "B_pa_traj_check": {
+  "step": {
+   "max_deficit_MW": 334.88,
+   "energy_deficit_MWh": 59.61,
+   "wall_s": 21.1
+  },
+  "derate": {
+   "max_deficit_MW": 324.93,
+   "energy_deficit_MWh": 56.98,
+   "wall_s": 18.9
+  }
+ }
+}
