@@ -1,0 +1,17 @@
+IEEE 30-bus data cleaning report
+============================================================
+
+Source: pypower.case30 (MATPOWER case30 variant)
+baseMVA: 100.0
+Buses: 30 (all reachable from slack bus 1)
+Branches: 41 (active=41)
+Generators total: 6
+Eligible thermal units (Pmax>=30MW, reachable): 6
+
+Electrical distances from slack (hop count, sum|x|):
+  bus1   hop=0  X=0.0000
+  bus2   hop=1  X=0.0600
+  bus22  hop=4  X=0.6500
+  bus27  hop=4  X=0.7000
+  bus23  hop=5  X=0.8200
+  bus13  hop=4  X=0.6300
